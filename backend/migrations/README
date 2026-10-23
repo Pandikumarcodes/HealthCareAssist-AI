@@ -1,0 +1,5 @@
+Single-database configuration for Flask.
+
+Step 1.2 initializes the migration environment only. There are no revisions or
+business tables. The connection URL and metadata come from the Flask application;
+do not put credentials in alembic.ini. No upgrade or stamp is required here.
