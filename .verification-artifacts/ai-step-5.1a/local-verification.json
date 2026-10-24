@@ -1,0 +1,60 @@
+{
+  "model_is_exact_configured_model": true,
+  "sdk_version": "2.33.0",
+  "backend_key_present": true,
+  "key_in_frontend": false,
+  "project_tier": "UNVERIFIED",
+  "paid_billing_disabled": "UNVERIFIED",
+  "model_project_availability": "UNVERIFIED",
+  "active_limits_and_remaining_quota": "UNVERIFIED",
+  "live_gemini_calls": 0,
+  "preservation": {
+    "checked_files": 1570,
+    "changed": [
+      "backend/app/__init__.py",
+      "backend/app/config.py"
+    ],
+    "missing": [],
+    "backend_env_unchanged": true,
+    "head": "2267fe92d27e206685951c2faa86dfc0f7033d41"
+  },
+  "test_reports": {
+    "pdf-tests.xml": {
+      "tests": "145",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "128.792",
+      "ai_tests": 0,
+      "ai_failures": 0
+    },
+    "backend-tests-first.xml": {
+      "tests": "431",
+      "failures": "9",
+      "errors": "0",
+      "skipped": "0",
+      "time": "293.121",
+      "ai_tests": 104,
+      "ai_failures": 0
+    },
+    "backend-tests.xml": {
+      "tests": "431",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "47.140",
+      "ai_tests": 104,
+      "ai_failures": 0
+    },
+    "backend-tests-confirmation.xml": {
+      "tests": "431",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "47.519",
+      "ai_tests": 104,
+      "ai_failures": 0
+    }
+  },
+  "reproduced_failures_verified_passing": 19
+}

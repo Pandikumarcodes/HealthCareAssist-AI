@@ -1,0 +1,32 @@
+{
+  "checked_files": 119,
+  "changed_existing_files": [
+    "README.md",
+    "backend/.env.example",
+    "backend/app/__init__.py",
+    "backend/app/config.py",
+    "backend/tests/test_ai.py",
+    "backend/tests/test_dashboard.py",
+    "backend/tests/test_document_processing.py",
+    "backend/tests/test_documents.py",
+    "backend/tests/test_requests.py",
+    "frontend/.env.example",
+    "frontend/src/App.tsx",
+    "frontend/src/components/layout/Sidebar.tsx",
+    "frontend/src/features/ai-assistant/AiAssistant.test.tsx",
+    "frontend/src/features/dashboard/Dashboard.test.tsx",
+    "frontend/src/features/knowledge-base/KnowledgeBase.test.tsx",
+    "frontend/src/features/requests/RequestManagement.test.tsx",
+    "frontend/src/features/requests/Requests.test.tsx",
+    "frontend/src/services/api.ts"
+  ],
+  "missing": [],
+  "unchanged_files": 101,
+  "unexpected_changes": [],
+  "backend_env_unchanged": true,
+  "dependency_manifests_unchanged": true,
+  "migrations_unchanged": true,
+  "head_unchanged": true,
+  "existing_changes_reviewed_and_preserved": true,
+  "secret_leaks_found": false
+}

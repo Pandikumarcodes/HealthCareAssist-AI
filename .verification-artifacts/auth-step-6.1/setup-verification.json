@@ -1,0 +1,8 @@
+{
+  "hidden_input": "PASS",
+  "hash_verification": "PASS",
+  "no_secret_output": "PASS",
+  "no_overwrite": "PASS",
+  "noninteractive_rejected": "PASS",
+  "real_configuration_written": false
+}

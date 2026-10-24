@@ -1478,3 +1478,7 @@ remain. Python syntax compilation and `pip check` passed. All **200 frontend
 tests**, TypeScript checking, Oxlint and the production build passed. Hash checks
 confirmed all 70 checked frontend and migration files were unchanged, with no
 added files in those trees. No commit, push, or deployment was performed.
+
+## Demo authentication
+
+Step 6.1 adds a single fictional demo account. See [demo authentication setup and security limits](docs/demo-authentication.md) for required environment variables, hidden password-hash generation, sessions, CSRF and local testing. No credentials are bundled with the application.

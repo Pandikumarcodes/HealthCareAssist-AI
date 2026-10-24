@@ -1,6 +1,6 @@
 import { act, fireEvent, render, screen, waitFor, within } from '@testing-library/react'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import App from '../../App'
+import App from '../../app/authenticated-test-app'
 import type { DocumentMetadata } from '../../services/documents'
 
 const original: DocumentMetadata = { id: 42, title: 'Fictional benefits policy', original_filename: 'fictional-policy.pdf', file_size: 2048,
@@ -63,7 +63,7 @@ describe('Knowledge Base library', () => {
     renderAt()
     expect(screen.getByRole('heading', { level: 1, name: 'Knowledge Base' })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'Knowledge Base' })).toHaveAttribute('aria-current', 'page')
-    expect(screen.getByRole('button', { name: 'AI Assistant Coming soon' })).toBeDisabled()
+    expect(screen.getByRole('link', { name: 'AI Assistant' })).toHaveAttribute('href', '/ai-assistant')
     expect(screen.getByText(/Fictional documents and synthetic data only/)).toBeInTheDocument()
     const table = await screen.findByRole('table')
     expect(table).toHaveTextContent(original.title + original.original_filename)

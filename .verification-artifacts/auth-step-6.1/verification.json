@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-24",
+  "milestone": "6.1",
+  "backend": {
+    "passed": 490,
+    "original_cases_preserved": 431,
+    "new_auth_cases": 59,
+    "warnings": 2,
+    "seconds": "476.112"
+  },
+  "frontend": {
+    "passed": 315,
+    "original_cases_preserved": 272,
+    "new_auth_cases": 43,
+    "files": 15
+  },
+  "pdf_worker_startup": {
+    "passed": 2
+  },
+  "typecheck": "PASS",
+  "oxlint": "PASS",
+  "production_build": "PASS",
+  "browser": {
+    "verdict": "PASS",
+    "widths": [
+      375,
+      768,
+      1440
+    ],
+    "horizontal_overflow": false,
+    "api_mocked": true
+  },
+  "safety": {
+    "live_gemini_calls": 0,
+    "postgres_connections": 0,
+    "backend_env_modified": false,
+    "new_dependencies": false,
+    "new_migrations": false,
+    "commit_push_deploy": false
+  },
+  "setup_helper": {
+    "hidden_input": "PASS",
+    "hash_verification": "PASS",
+    "no_secret_output": "PASS",
+    "no_overwrite": "PASS",
+    "noninteractive_rejected": "PASS",
+    "real_configuration_written": false
+  },
+  "preservation": {
+    "checked_files": 119,
+    "changed_existing_files": [
+      "README.md",
+      "backend/.env.example",
+      "backend/app/__init__.py",
+      "backend/app/config.py",
+      "backend/tests/test_ai.py",
+      "backend/tests/test_dashboard.py",
+      "backend/tests/test_document_processing.py",
+      "backend/tests/test_documents.py",
+      "backend/tests/test_requests.py",
+      "frontend/.env.example",
+      "frontend/src/App.tsx",
+      "frontend/src/components/layout/Sidebar.tsx",
+      "frontend/src/features/ai-assistant/AiAssistant.test.tsx",
+      "frontend/src/features/dashboard/Dashboard.test.tsx",
+      "frontend/src/features/knowledge-base/KnowledgeBase.test.tsx",
+      "frontend/src/features/requests/RequestManagement.test.tsx",
+      "frontend/src/features/requests/Requests.test.tsx",
+      "frontend/src/services/api.ts"
+    ],
+    "missing": [],
+    "unchanged_files": 101,
+    "unexpected_changes": [],
+    "backend_env_unchanged": true,
+    "dependency_manifests_unchanged": true,
+    "migrations_unchanged": true,
+    "head_unchanged": true,
+    "existing_changes_reviewed_and_preserved": true,
+    "secret_leaks_found": false
+  },
+  "limitations": [
+    "One shared fictional account; no per-session server revocation or throttling.",
+    "Real-credential/live PostgreSQL/HTTPS reverse-proxy integration was not exercised.",
+    "Live Gemini quota and provider behavior remain unverified."
+  ],
+  "verdict": "STEP 6.1 COMPLETE"
+}

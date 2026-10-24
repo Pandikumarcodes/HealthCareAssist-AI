@@ -40,8 +40,8 @@ def app(tmp_path):
 
 
 @pytest.fixture()
-def client(app):
-    return app.test_client()
+def client(app, authenticated_client):
+    return authenticated_client(app)
 
 
 def make_pdf(*pages, encrypted=False):

@@ -1,0 +1,378 @@
+{
+  "liveGeminiCalls": 0,
+  "backendCalls": 0,
+  "requests": [
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/logout",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/logout",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/logout",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    }
+  ],
+  "layouts": [
+    {
+      "width": 375,
+      "overflow": false,
+      "logoutVisible": true
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "logoutVisible": true
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "logoutVisible": true
+    }
+  ],
+  "workflows": [
+    {
+      "width": 375,
+      "invalidLogin": true,
+      "validLogin": true,
+      "navigation": [
+        "Dashboard",
+        "Requests",
+        "Knowledge Base",
+        "AI Assistant"
+      ],
+      "keyboardSubmit": true,
+      "refreshRestored": true,
+      "logout": true,
+      "protectedAfterLogout": true,
+      "freshDashboardAfterRelogin": true
+    },
+    {
+      "width": 768,
+      "invalidLogin": true,
+      "validLogin": true,
+      "navigation": [
+        "Dashboard",
+        "Requests",
+        "Knowledge Base",
+        "AI Assistant"
+      ],
+      "keyboardSubmit": true,
+      "refreshRestored": true,
+      "logout": true,
+      "protectedAfterLogout": true,
+      "freshDashboardAfterRelogin": true
+    },
+    {
+      "width": 1440,
+      "invalidLogin": true,
+      "validLogin": true,
+      "navigation": [
+        "Dashboard",
+        "Requests",
+        "Knowledge Base",
+        "AI Assistant"
+      ],
+      "keyboardSubmit": true,
+      "refreshRestored": true,
+      "logout": true,
+      "protectedAfterLogout": true,
+      "freshDashboardAfterRelogin": true
+    }
+  ],
+  "exceptions": [],
+  "cancelledInterceptions": [
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    }
+  ],
+  "blockedExternal": [],
+  "verdict": "PASS"
+}

@@ -1,0 +1,19 @@
+{
+  "checked": 1615,
+  "unchanged": 1608,
+  "unchangedBackendFiles": 1505,
+  "changedExistingFiles": [
+    "frontend/src/components/layout/Sidebar.tsx",
+    "frontend/src/features/requests/Requests.test.tsx",
+    "frontend/src/features/dashboard/Dashboard.test.tsx",
+    "frontend/src/features/knowledge-base/KnowledgeBase.test.tsx",
+    "frontend/src/services/api.ts",
+    "frontend/src/App.tsx",
+    "frontend/src/components/layout/AppLayout.tsx"
+  ],
+  "missing": [],
+  "backendUnchanged": true,
+  "dependenciesUnchanged": true,
+  "originalBackendEditsPreserved": true,
+  "verdict": "PASS"
+}

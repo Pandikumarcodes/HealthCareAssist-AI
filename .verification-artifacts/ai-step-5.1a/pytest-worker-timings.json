@@ -1,0 +1,51 @@
+[
+  {
+    "worker": "app.pdf_validation",
+    "timeout": 5,
+    "trace": "worker-import-0.txt",
+    "returncode": 0,
+    "wall_seconds": 2.3549275000113994
+  },
+  {
+    "worker": "app.pdf_extraction",
+    "timeout": 10,
+    "trace": "worker-import-1.txt",
+    "returncode": 0,
+    "wall_seconds": 1.5621617999859154
+  },
+  {
+    "worker": "app.pdf_validation",
+    "timeout": 5,
+    "trace": "worker-import-2.txt",
+    "returncode": 0,
+    "wall_seconds": 1.611329899984412
+  },
+  {
+    "worker": "app.pdf_extraction",
+    "timeout": 10,
+    "trace": "worker-import-3.txt",
+    "returncode": 0,
+    "wall_seconds": 2.0765818000072613
+  },
+  {
+    "worker": "app.pdf_validation",
+    "timeout": 5,
+    "trace": "worker-import-4.txt",
+    "returncode": 0,
+    "wall_seconds": 2.7762740000034682
+  },
+  {
+    "worker": "app.pdf_extraction",
+    "timeout": 10,
+    "trace": "worker-import-5.txt",
+    "returncode": 0,
+    "wall_seconds": 1.4779561000177637
+  },
+  {
+    "worker": "app.pdf_extraction",
+    "timeout": 10,
+    "trace": "worker-import-6.txt",
+    "returncode": 0,
+    "wall_seconds": 1.667841899965424
+  }
+]

@@ -1,0 +1,5 @@
+ M backend/app/__init__.py
+ M backend/app/config.py
+?? .verification-artifacts/
+?? backend/tests/test_pdf_worker_startup.py
+?? docs/

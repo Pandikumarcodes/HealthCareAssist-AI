@@ -1,7 +1,7 @@
 import { act, fireEvent, render, screen, waitFor, within } from '@testing-library/react'
 import { QueryClient } from '@tanstack/react-query'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import App from '../../App'
+import App from '../../app/authenticated-test-app'
 import type { SupportRequest } from '../../services/requests'
 
 const original: SupportRequest = { id: 42, title: 'Synthetic coverage question', description: 'Synthetic policy details.', category: 'COVERAGE', status: 'OPEN', created_at: '2026-10-23T10:00:00Z', updated_at: '2026-10-23T11:00:00Z' }

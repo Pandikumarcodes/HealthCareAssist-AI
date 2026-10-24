@@ -1,6 +1,6 @@
 import { act, fireEvent, render, screen, waitFor, within } from '@testing-library/react'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import App from '../../App'
+import App from '../../app/authenticated-test-app'
 import type { RequestListParameters, RequestListResponse, SupportRequest } from '../../services/requests'
 
 const item: SupportRequest = { id: 42, title: 'Coverage clarification', description: 'Private description must stay hidden', category: 'COVERAGE', status: 'OPEN', created_at: '2026-10-23T10:00:00Z', updated_at: '2026-10-23T11:00:00Z' }
@@ -34,7 +34,7 @@ describe('support requests list', () => {
     expect(screen.getByRole('heading', { name: 'Support Requests', level: 1 })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'Support Requests' })).toHaveAttribute('aria-current', 'page')
     expect(screen.getByRole('link', { name: 'Knowledge Base' })).toHaveAttribute('href', '/knowledge-base')
-    expect(screen.getByRole('button', { name: 'AI Assistant Coming soon' })).toBeDisabled()
+    expect(screen.getByRole('link', { name: 'AI Assistant' })).toHaveAttribute('href', '/ai-assistant')
     await loaded()
     expect(requestParameters()).toEqual({ page: '1', page_size: '20' })
     expect(fetchMock).toHaveBeenCalledTimes(1)

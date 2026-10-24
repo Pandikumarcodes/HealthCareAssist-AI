@@ -1,6 +1,6 @@
 import { fireEvent, render, screen, waitFor, within } from '@testing-library/react'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
-import App from '../../App'
+import App from '../../app/authenticated-test-app'
 import { getDashboardSummary } from '../../services/dashboard'
 import { getHealth } from '../../services/health'
 
@@ -80,16 +80,14 @@ describe('dashboard', () => {
     expect(within(card('Total Requests')).getByRole('definition')).toHaveTextContent('14')
   })
 
-  it('keeps future navigation disabled and identifies the active dashboard', async () => {
+  it('links workspace pages and identifies the active dashboard', async () => {
     vi.mocked(getDashboardSummary).mockResolvedValue(empty)
     render(<App />)
     const navigation = screen.getByRole('navigation', { name: 'Workspace' })
     expect(within(navigation).getByRole('link', { name: 'Dashboard' })).toHaveAttribute('aria-current', 'page')
     expect(within(navigation).getByRole('link', { name: 'Support Requests' })).toHaveAttribute('href', '/requests')
     expect(within(navigation).getByRole('link', { name: 'Knowledge Base' })).toHaveAttribute('href', '/knowledge-base')
-    for (const label of ['AI Assistant']) {
-      expect(within(navigation).getByRole('button', { name: `${label} Coming soon` })).toBeDisabled()
-    }
+    expect(within(navigation).getByRole('link', { name: 'AI Assistant' })).toHaveAttribute('href', '/ai-assistant')
     await screen.findByText('Summary loaded')
   })
 

@@ -1,0 +1,25 @@
+{
+  "historical_15_test_ids": "Unavailable: supplied report had counts only; pre-run accessible backend cache was empty.",
+  "reproduction": {"passed": 124, "failed": 19, "warnings": 2, "seconds": 286.32},
+  "failed_test_ids": [
+    "backend/tests/test_documents.py::test_default_title_and_case_insensitive_extension",
+    "backend/tests/test_documents.py::test_title_character_limit",
+    "backend/tests/test_documents.py::test_exact_size_limit_with_multipart_allowance",
+    "backend/tests/test_documents.py::test_duplicate_original_names_have_unique_internal_names",
+    "backend/tests/test_documents.py::test_collision_does_not_overwrite_existing_file",
+    "backend/tests/test_documents.py::test_newest_first_pagination_and_id_tie_break",
+    "backend/tests/test_documents.py::test_delete_removes_only_target",
+    "backend/tests/test_documents.py::test_delete_missing_file_removes_stale_metadata",
+    "backend/tests/test_documents.py::test_database_failure_restores_consistency[upload]",
+    "backend/tests/test_documents.py::test_database_failure_restores_consistency[delete]",
+    "backend/tests/test_documents.py::test_flush_failure_cleans_only_new_upload",
+    "backend/tests/test_documents.py::test_storage_failure_preserves_existing_document[upload]",
+    "backend/tests/test_documents.py::test_storage_failure_preserves_existing_document[delete]",
+    "backend/tests/test_documents.py::test_failed_final_purge_keeps_isolated_recoverable_file",
+    "backend/tests/test_documents.py::test_symlink_entries_are_rejected",
+    "backend/tests/test_document_processing.py::test_failed_processing_clears_partial_chunks_and_can_retry",
+    "backend/tests/test_document_processing.py::test_processing_failure_keeps_management_and_logs_no_text",
+    "backend/tests/test_document_processing.py::test_processing_database_failure_rolls_back_file_metadata_and_chunks",
+    "backend/tests/test_document_processing.py::test_delete_cascades_chunks_and_failed_delete_preserves_them"
+  ]
+}

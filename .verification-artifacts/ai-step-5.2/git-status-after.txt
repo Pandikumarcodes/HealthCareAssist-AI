@@ -1,0 +1,16 @@
+ M backend/app/__init__.py
+ M backend/app/config.py
+ M frontend/src/App.tsx
+ M frontend/src/components/layout/AppLayout.tsx
+ M frontend/src/components/layout/Sidebar.tsx
+ M frontend/src/features/dashboard/Dashboard.test.tsx
+ M frontend/src/features/knowledge-base/KnowledgeBase.test.tsx
+ M frontend/src/features/requests/Requests.test.tsx
+ M frontend/src/services/api.ts
+?? .verification-artifacts/
+?? backend/tests/test_pdf_worker_startup.py
+?? docs/
+?? frontend/src/features/ai-assistant/
+?? frontend/src/pages/AiAssistantPage.tsx
+?? frontend/src/services/ai.test.ts
+?? frontend/src/services/ai.ts

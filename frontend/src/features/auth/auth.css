@@ -1,0 +1,21 @@
+.login-page, .auth-status { min-height: 100dvh; display: grid; place-content: center; padding: 32px 20px; background: radial-gradient(ellipse at top left, #e4f2ea, transparent 65%), #f8fbfa; }
+.auth-status { text-align: center; }
+.auth-status h1 { font-size: 32px; letter-spacing: -1px; }
+.login-card { width: min(100%, 440px); justify-self: center; padding: 36px; border: 1px solid #d9e6e1; border-radius: 18px; background: #fff; box-shadow: 0 12px 48px #193d3b08; }
+.login-card .brand { font-size: 17px; gap: 10px; }
+.login-card .eyebrow { margin-top: 36px; font-size: 10px; letter-spacing: 1.2px; }
+.login-card h1 { font-size: 36px; letter-spacing: -1.3px; margin: 12px 0; }
+.login-description { color: #5b706d; font-size: 14px; line-height: 1.7; margin: 0 0 28px; }
+.login-card fieldset { padding: 0; margin: 0; border: 0; min-width: 0; }
+.login-card .request-field { margin-bottom: 22px; }
+.login-card label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 9px; }
+.login-card input { width: 100%; min-width: 0; height: 46px; padding: 12px; border-radius: 7px; border: 1px solid #cbdad4; background: #fff; color: #193d3b; font: inherit; font-size: 15px; }
+.login-card input:focus-visible { outline: 3px solid #16827a; outline-offset: 3px; }
+.login-card input[aria-invalid=true] { border-color: #ad463b; }
+.login-card .field-error, .login-error { color: #9b3c32; font-size: 13px; line-height: 1.6; }
+.login-error { padding: 12px; background: #fff3ef; border-radius: 7px; }
+.login-card button { width: 100%; min-height: 46px; margin: 0; }
+.login-note { margin: 24px 0 0; padding-top: 20px; border-top: 1px solid #e7eeeb; color: #5b706d; font-size: 12px; line-height: 1.7; }
+.sidebar-bottom .logout-button { width: 100%; margin-top: 14px; min-height: 44px; }
+.logout-error { color: #9b3c32; font-size: 12px; line-height: 1.5; }
+@media (max-width: 480px) { .login-card { padding: 28px 22px; } .login-card .brand { font-size: 15px; } .login-card h1 { font-size: 32px; } }

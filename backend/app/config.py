@@ -1,8 +1,6 @@
 import os
+from datetime import timedelta
 from pathlib import Path
-
-from dotenv import load_dotenv
-from sqlalchemy.engine import URL
 
 
 BACKEND_DIRECTORY = Path(__file__).resolve().parent.parent
@@ -13,6 +11,16 @@ class Config:
 
     DEBUG = False
     TESTING = False
+    SECRET_KEY = None
+    DEMO_USERNAME = ""
+    DEMO_PASSWORD_HASH = ""
+    SESSION_COOKIE_NAME = "healthcareassist_session"
+    SESSION_COOKIE_HTTPONLY = True
+    SESSION_COOKIE_SAMESITE = "Lax"
+    SESSION_COOKIE_SECURE = True
+    SESSION_COOKIE_PATH = "/api"
+    PERMANENT_SESSION_LIFETIME = timedelta(hours=8)
+    SESSION_REFRESH_EACH_REQUEST = False
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     DOCUMENT_UPLOAD_DIR = str(BACKEND_DIRECTORY / "instance" / "document_uploads")
     GEMINI_API_KEY = ""
@@ -31,6 +39,10 @@ class TestingConfig(Config):
 
 def local_configuration() -> dict[str, object]:
     """Read local settings at factory time; environment values take precedence."""
+    # PDF workers need BACKEND_DIRECTORY, never local settings or the ORM.
+    from dotenv import load_dotenv
+    from sqlalchemy.engine import URL
+
     load_dotenv(BACKEND_DIRECTORY / ".env", override=False)
     database_url = os.getenv("DATABASE_URL", "").strip()
     if not database_url:
@@ -64,6 +76,11 @@ def local_configuration() -> dict[str, object]:
     if isinstance(database_url, str) and not database_url.startswith("postgresql+psycopg://"):
         raise RuntimeError("DATABASE_URL must use PostgreSQL with the psycopg driver.")
     return {
+        "SECRET_KEY": os.getenv("SECRET_KEY", ""),
+        "DEMO_USERNAME": os.getenv("DEMO_USERNAME", "").strip(),
+        "DEMO_PASSWORD_HASH": os.getenv("DEMO_PASSWORD_HASH", ""),
+        # HTTPS is the safe default; explicitly opt out only for local HTTP.
+        "SESSION_COOKIE_SECURE": os.getenv("SESSION_COOKIE_SECURE", "true").lower() != "false",
         "GEMINI_API_KEY": os.getenv("GEMINI_API_KEY", "").strip(),
         "GEMINI_MODEL": os.getenv("GEMINI_MODEL", Config.GEMINI_MODEL).strip(),
         "GEMINI_TIMEOUT_SECONDS": os.getenv("GEMINI_TIMEOUT_SECONDS", "20"),

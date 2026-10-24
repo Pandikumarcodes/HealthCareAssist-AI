@@ -59,8 +59,8 @@ def search(monkeypatch):
 
 
 @pytest.fixture()
-def client(app, search):
-    return app.test_client()
+def client(app, search, authenticated_client):
+    return authenticated_client(app)
 
 
 def ask(client, question="What claim documents are required?"):

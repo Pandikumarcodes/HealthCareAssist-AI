@@ -25,8 +25,8 @@ def app(tmp_path):
         db.engine.dispose()
 
 
-def test_empty_dashboard_summary(app):
-    response = app.test_client().get("/api/dashboard/summary")
+def test_empty_dashboard_summary(app, authenticated_client):
+    response = authenticated_client(app).get("/api/dashboard/summary")
     assert response.status_code == 200
     assert response.get_json() == {
         "total_requests": 0, "open_requests": 0,
@@ -34,14 +34,14 @@ def test_empty_dashboard_summary(app):
     }
 
 
-def test_summary_counts_all_statuses_consistently(app):
+def test_summary_counts_all_statuses_consistently(app, authenticated_client):
     statuses = ["OPEN", "OPEN", "OPEN", "IN_PROGRESS", "IN_PROGRESS", "RESOLVED"]
     db.session.add_all([
         SupportRequest(title=f"Request {index}", description="Details", status=status)
         for index, status in enumerate(statuses)
     ])
     db.session.commit()
-    response = app.test_client().get("/api/dashboard/summary")
+    response = authenticated_client(app).get("/api/dashboard/summary")
     assert response.status_code == 200
     summary = response.get_json()
     assert summary == {
@@ -114,19 +114,19 @@ def test_database_rejects_invalid_status_update(app):
     db.session.rollback()
 
 
-def test_database_failure_is_sanitized_and_health_stays_available(app, monkeypatch, caplog):
+def test_database_failure_is_sanitized_and_health_stays_available(app, monkeypatch, caplog, authenticated_client):
     def fail(*args, **kwargs):
         raise OperationalError("private sql", {}, Exception("secret password"))
 
     monkeypatch.setattr(db.session, "execute", fail)
-    response = app.test_client().get("/api/dashboard/summary")
+    response = authenticated_client(app).get("/api/dashboard/summary")
     assert response.status_code == 503
     assert response.get_json() == {
         "error": "Dashboard summary is temporarily unavailable. Please try again."
     }
     assert "secret" not in response.get_data(as_text=True) + caplog.text
     assert "private sql" not in caplog.text
-    health = app.test_client().get("/api/health")
+    health = authenticated_client(app).get("/api/health")
     assert health.status_code == 200
     assert health.get_json() == {
         "status": "healthy", "service": "HealthCareAssist AI", "version": "1.0.0",

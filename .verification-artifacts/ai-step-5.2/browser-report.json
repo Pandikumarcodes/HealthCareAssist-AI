@@ -1,0 +1,127 @@
+{
+  "liveGeminiCalls": 0,
+  "backendCalls": 0,
+  "requests": [
+    {
+      "path": "/api/ai/ask",
+      "method": "POST",
+      "body": {
+        "question": "What does the fictional claims policy require?"
+      }
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST",
+      "body": {
+        "question": "Fictional long passage?"
+      }
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST",
+      "body": {
+        "question": "What does the fictional claims policy require?"
+      }
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST",
+      "body": {
+        "question": "Fictional long passage?"
+      }
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST",
+      "body": {
+        "question": "What does the fictional claims policy require?"
+      }
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST",
+      "body": {
+        "question": "Fictional long passage?"
+      }
+    },
+    {
+      "path": "/api/documents/42",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents/42",
+      "method": "GET"
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST",
+      "body": {
+        "question": "Fictional no-context question?"
+      }
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST",
+      "body": {
+        "question": "Fictional quota question?"
+      }
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST",
+      "body": {
+        "question": "Fictional timeout question?"
+      }
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST",
+      "body": {
+        "question": "Fictional network question?"
+      }
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST",
+      "body": {
+        "question": "Fictional line one\nFictional line two"
+      }
+    }
+  ],
+  "layouts": [
+    {
+      "name": "mobile",
+      "width": 375,
+      "overflow": false,
+      "buttonWithinWidth": true,
+      "composerWithinWidth": true,
+      "answerWrap": true,
+      "sidebarVisible": false
+    },
+    {
+      "name": "tablet",
+      "width": 768,
+      "overflow": false,
+      "buttonWithinWidth": true,
+      "composerWithinWidth": true,
+      "answerWrap": true,
+      "sidebarVisible": true
+    },
+    {
+      "name": "desktop",
+      "width": 1440,
+      "overflow": false,
+      "buttonWithinWidth": true,
+      "composerWithinWidth": true,
+      "answerWrap": true,
+      "sidebarVisible": true
+    }
+  ],
+  "workflow": [
+    "responsive layouts, Enter submission, duplicate prevention, loading, exact payload, focus, source order, long wrapping",
+    "existing document details navigation, no-context, quota, timeout, network failure, Clear chat, Shift+Enter newline"
+  ],
+  "exceptions": [],
+  "blockedExternal": [],
+  "verdict": "PASS"
+}
