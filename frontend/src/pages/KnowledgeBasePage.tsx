@@ -122,7 +122,7 @@ export function KnowledgeBasePage() {
                 value={input}
                 placeholder="For example, annual coverage"
                 aria-invalid={invalidQuery}
-                aria-describedby="document-search-help"
+                aria-describedby={`document-search-help${invalidQuery ? " document-search-error" : ""}`}
                 onChange={(event) => setInput(event.target.value)}
               />
               <p id="document-search-help">
@@ -131,7 +131,7 @@ export function KnowledgeBasePage() {
               </p>
             </div>
             {invalidQuery && (
-              <p className="field-error" role="alert">
+              <p id="document-search-error" className="field-error" role="alert">
                 Use at most 200 characters without control characters.
               </p>
             )}
@@ -293,8 +293,7 @@ export function KnowledgeBasePage() {
             <div>
               <strong>Unable to load documents</strong>
               <p>
-                Check your connection and that the Flask backend is running,
-                then try again.
+                Check your connection and try again.
               </p>
             </div>
             <button

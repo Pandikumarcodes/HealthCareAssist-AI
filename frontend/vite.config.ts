@@ -7,7 +7,10 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     host: "127.0.0.1",
-    proxy: { "/api": "http://127.0.0.1:5053" },
+    // Keep the browser Host so Flask can validate Origin on CSRF-protected POSTs.
+    proxy: {
+      "/api": { target: "http://127.0.0.1:5053", changeOrigin: false },
+    },
   },
   test: {
     environment: "jsdom",

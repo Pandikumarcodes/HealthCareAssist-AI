@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import { Icon } from "./Icon";
 import { Sidebar } from "./Sidebar";
@@ -7,6 +7,11 @@ import "../../features/dashboard/dashboard.css";
 export function AppLayout() {
   const [navigationOpen, setNavigationOpen] = useState(false);
   const pathname = useLocation().pathname;
+  const main = useRef<HTMLElement>(null);
+  const menu = useRef<HTMLButtonElement>(null);
+  useLayoutEffect(() => {
+    main.current?.focus();
+  }, [pathname]);
   const pageTitle = pathname.startsWith("/requests")
     ? "Support Requests"
     : pathname.startsWith("/knowledge-base")
@@ -16,7 +21,15 @@ export function AppLayout() {
         : "Dashboard";
 
   return (
-    <div className="dashboard-shell">
+    <div
+      className="dashboard-shell"
+      onKeyDown={(event) => {
+        if (event.key === "Escape" && navigationOpen) {
+          setNavigationOpen(false);
+          menu.current?.focus();
+        }
+      }}
+    >
       <a className="skip-link" href="#dashboard-main">
         Skip to main content
       </a>
@@ -25,6 +38,7 @@ export function AppLayout() {
           <span aria-hidden="true">+</span> HealthCareAssist AI
         </span>
         <button
+          ref={menu}
           className="menu-toggle"
           type="button"
           aria-label={navigationOpen ? "Close navigation" : "Open navigation"}
@@ -49,7 +63,12 @@ export function AppLayout() {
             <span className="workspace-dot" /> Support workspace
           </span>
         </header>
-        <main id="dashboard-main" className="dashboard-main" tabIndex={-1}>
+        <main
+          ref={main}
+          id="dashboard-main"
+          className="dashboard-main"
+          tabIndex={-1}
+        >
           <Outlet />
         </main>
         <footer className="dashboard-footer">

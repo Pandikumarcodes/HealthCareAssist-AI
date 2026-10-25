@@ -1,0 +1,2697 @@
+{
+  "backendCalls": 0,
+  "liveGeminiCalls": 0,
+  "layouts": [
+    {
+      "page": "login",
+      "width": 320,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "login",
+      "width": 320,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "dashboard",
+      "width": 320,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "dashboard",
+      "width": 320,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests",
+      "width": 320,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests",
+      "width": 320,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "new-request",
+      "width": 320,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "new-request",
+      "width": 320,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "request-details",
+      "width": 320,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "request-details",
+      "width": 320,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "request-details-dialog",
+      "width": 320,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "request-details-dialog",
+      "width": 320,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "edit-request",
+      "width": 320,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "edit-request",
+      "width": 320,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "knowledge-base",
+      "width": 320,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "knowledge-base",
+      "width": 320,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "document-details",
+      "width": 320,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "document-details",
+      "width": 320,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "document-details-dialog",
+      "width": 320,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "document-details-dialog",
+      "width": 320,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-empty",
+      "width": 320,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-composer-short-viewport",
+      "width": 320,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-assistant",
+      "width": 320,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-assistant",
+      "width": 320,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "login",
+      "width": 375,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "login",
+      "width": 375,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "dashboard",
+      "width": 375,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "dashboard",
+      "width": 375,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests",
+      "width": 375,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests",
+      "width": 375,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "new-request",
+      "width": 375,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "new-request",
+      "width": 375,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "request-details",
+      "width": 375,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "request-details",
+      "width": 375,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "request-details-dialog",
+      "width": 375,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "request-details-dialog",
+      "width": 375,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "edit-request",
+      "width": 375,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "edit-request",
+      "width": 375,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "knowledge-base",
+      "width": 375,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "knowledge-base",
+      "width": 375,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "document-details",
+      "width": 375,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "document-details",
+      "width": 375,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "document-details-dialog",
+      "width": 375,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "document-details-dialog",
+      "width": 375,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-empty",
+      "width": 375,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-composer-short-viewport",
+      "width": 375,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-assistant",
+      "width": 375,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-assistant",
+      "width": 375,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "login",
+      "width": 768,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "login",
+      "width": 768,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "dashboard",
+      "width": 768,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "dashboard",
+      "width": 768,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests",
+      "width": 768,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests",
+      "width": 768,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "new-request",
+      "width": 768,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "new-request",
+      "width": 768,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "request-details",
+      "width": 768,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "request-details",
+      "width": 768,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "request-details-dialog",
+      "width": 768,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "request-details-dialog",
+      "width": 768,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "edit-request",
+      "width": 768,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "edit-request",
+      "width": 768,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "knowledge-base",
+      "width": 768,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "knowledge-base",
+      "width": 768,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "document-details",
+      "width": 768,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "document-details",
+      "width": 768,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "document-details-dialog",
+      "width": 768,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "document-details-dialog",
+      "width": 768,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-empty",
+      "width": 768,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-assistant",
+      "width": 768,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-assistant",
+      "width": 768,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "login",
+      "width": 1024,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "login",
+      "width": 1024,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "dashboard",
+      "width": 1024,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "dashboard",
+      "width": 1024,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests",
+      "width": 1024,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests",
+      "width": 1024,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "new-request",
+      "width": 1024,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "new-request",
+      "width": 1024,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "request-details",
+      "width": 1024,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "request-details",
+      "width": 1024,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "request-details-dialog",
+      "width": 1024,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "request-details-dialog",
+      "width": 1024,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "edit-request",
+      "width": 1024,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "edit-request",
+      "width": 1024,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "knowledge-base",
+      "width": 1024,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "knowledge-base",
+      "width": 1024,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "document-details",
+      "width": 1024,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "document-details",
+      "width": 1024,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "document-details-dialog",
+      "width": 1024,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "document-details-dialog",
+      "width": 1024,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-empty",
+      "width": 1024,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-assistant",
+      "width": 1024,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-assistant",
+      "width": 1024,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "login",
+      "width": 1440,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "login",
+      "width": 1440,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "dashboard",
+      "width": 1440,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "dashboard",
+      "width": 1440,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests",
+      "width": 1440,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests",
+      "width": 1440,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "new-request",
+      "width": 1440,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "new-request",
+      "width": 1440,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "request-details",
+      "width": 1440,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "request-details",
+      "width": 1440,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "request-details-dialog",
+      "width": 1440,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "request-details-dialog",
+      "width": 1440,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "edit-request",
+      "width": 1440,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "edit-request",
+      "width": 1440,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "knowledge-base",
+      "width": 1440,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "knowledge-base",
+      "width": 1440,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "document-details",
+      "width": 1440,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "document-details",
+      "width": 1440,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "document-details-dialog",
+      "width": 1440,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "document-details-dialog",
+      "width": 1440,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-empty",
+      "width": 1440,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-assistant",
+      "width": 1440,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-assistant",
+      "width": 1440,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "dashboard-empty",
+      "width": 320,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "dashboard-empty",
+      "width": 320,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests-empty",
+      "width": 320,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests-empty",
+      "width": 320,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "knowledge-base-empty",
+      "width": 320,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "knowledge-base-empty",
+      "width": 320,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests-error",
+      "width": 320,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests-error",
+      "width": 320,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-error",
+      "width": 320,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-error",
+      "width": 320,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-no-context",
+      "width": 320,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-no-context",
+      "width": 320,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "dashboard-empty",
+      "width": 375,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "dashboard-empty",
+      "width": 375,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests-empty",
+      "width": 375,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests-empty",
+      "width": 375,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "knowledge-base-empty",
+      "width": 375,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "knowledge-base-empty",
+      "width": 375,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests-error",
+      "width": 375,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests-error",
+      "width": 375,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-error",
+      "width": 375,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-error",
+      "width": 375,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-no-context",
+      "width": 375,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-no-context",
+      "width": 375,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "dashboard-empty",
+      "width": 768,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "dashboard-empty",
+      "width": 768,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests-empty",
+      "width": 768,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests-empty",
+      "width": 768,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "knowledge-base-empty",
+      "width": 768,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "knowledge-base-empty",
+      "width": 768,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests-error",
+      "width": 768,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests-error",
+      "width": 768,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-error",
+      "width": 768,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-error",
+      "width": 768,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-no-context",
+      "width": 768,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-no-context",
+      "width": 768,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "dashboard-empty",
+      "width": 1024,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "dashboard-empty",
+      "width": 1024,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests-empty",
+      "width": 1024,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests-empty",
+      "width": 1024,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "knowledge-base-empty",
+      "width": 1024,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "knowledge-base-empty",
+      "width": 1024,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests-error",
+      "width": 1024,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests-error",
+      "width": 1024,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-error",
+      "width": 1024,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-error",
+      "width": 1024,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-no-context",
+      "width": 1024,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-no-context",
+      "width": 1024,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "dashboard-empty",
+      "width": 1440,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "dashboard-empty",
+      "width": 1440,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests-empty",
+      "width": 1440,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests-empty",
+      "width": 1440,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "knowledge-base-empty",
+      "width": 1440,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "knowledge-base-empty",
+      "width": 1440,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests-error",
+      "width": 1440,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "requests-error",
+      "width": 1440,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-error",
+      "width": 1440,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-error",
+      "width": 1440,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-no-context",
+      "width": 1440,
+      "textScale": 1,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    },
+    {
+      "page": "ai-no-context",
+      "width": 1440,
+      "textScale": 2,
+      "overflow": false,
+      "offenders": [],
+      "smallTargets": []
+    }
+  ],
+  "workflows": [
+    {
+      "width": 320,
+      "guestRedirect": true,
+      "validation": true,
+      "keyboardLogin": true,
+      "navigation": true,
+      "dialogKeyboard": true,
+      "expiry": true,
+      "logout": true,
+      "protectedAfterLogout": true
+    },
+    {
+      "width": 375,
+      "guestRedirect": true,
+      "validation": true,
+      "keyboardLogin": true,
+      "navigation": true,
+      "dialogKeyboard": true,
+      "expiry": true,
+      "logout": true,
+      "protectedAfterLogout": true
+    },
+    {
+      "width": 768,
+      "guestRedirect": true,
+      "validation": true,
+      "keyboardLogin": true,
+      "navigation": true,
+      "dialogKeyboard": true,
+      "expiry": true,
+      "logout": true,
+      "protectedAfterLogout": true
+    },
+    {
+      "width": 1024,
+      "guestRedirect": true,
+      "validation": true,
+      "keyboardLogin": true,
+      "navigation": true,
+      "dialogKeyboard": true,
+      "expiry": true,
+      "logout": true,
+      "protectedAfterLogout": true
+    },
+    {
+      "width": 1440,
+      "guestRedirect": true,
+      "validation": true,
+      "keyboardLogin": true,
+      "navigation": true,
+      "dialogKeyboard": true,
+      "expiry": true,
+      "logout": true,
+      "protectedAfterLogout": true
+    }
+  ],
+  "contrasts": [
+    {
+      "page": "login",
+      "failures": [],
+      "controlBoundaries": [
+        {
+          "tag": "INPUT",
+          "id": "username",
+          "ratio": 3.24
+        },
+        {
+          "tag": "INPUT",
+          "id": "password",
+          "ratio": 3.24
+        }
+      ]
+    },
+    {
+      "page": "dashboard",
+      "failures": [],
+      "controlBoundaries": []
+    },
+    {
+      "page": "requests",
+      "failures": [],
+      "controlBoundaries": [
+        {
+          "tag": "INPUT",
+          "id": "request-search",
+          "ratio": 3.24
+        },
+        {
+          "tag": "SELECT",
+          "id": "request-status",
+          "ratio": 3.24
+        },
+        {
+          "tag": "SELECT",
+          "id": "request-category",
+          "ratio": 3.24
+        }
+      ]
+    },
+    {
+      "page": "new-request",
+      "failures": [],
+      "controlBoundaries": [
+        {
+          "tag": "INPUT",
+          "id": "title",
+          "ratio": 3.24
+        },
+        {
+          "tag": "TEXTAREA",
+          "id": "description",
+          "ratio": 3.24
+        },
+        {
+          "tag": "SELECT",
+          "id": "category",
+          "ratio": 3.24
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "ratio": 3.24
+        }
+      ]
+    },
+    {
+      "page": "request-details",
+      "failures": [],
+      "controlBoundaries": [
+        {
+          "tag": "A",
+          "id": "",
+          "ratio": 3.24
+        },
+        {
+          "tag": "SELECT",
+          "id": "change-status",
+          "ratio": 3.24
+        }
+      ]
+    },
+    {
+      "page": "edit-request",
+      "failures": [],
+      "controlBoundaries": [
+        {
+          "tag": "INPUT",
+          "id": "title",
+          "ratio": 3.24
+        },
+        {
+          "tag": "TEXTAREA",
+          "id": "description",
+          "ratio": 3.24
+        },
+        {
+          "tag": "SELECT",
+          "id": "category",
+          "ratio": 3.24
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "ratio": 3.24
+        }
+      ]
+    },
+    {
+      "page": "knowledge-base",
+      "failures": [],
+      "controlBoundaries": [
+        {
+          "tag": "INPUT",
+          "id": "document-file",
+          "ratio": 3.11
+        },
+        {
+          "tag": "INPUT",
+          "id": "document-title",
+          "ratio": 3.24
+        },
+        {
+          "tag": "INPUT",
+          "id": "document-search",
+          "ratio": 3.24
+        },
+        {
+          "tag": "SELECT",
+          "id": "document-search-limit",
+          "ratio": 3.24
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "ratio": 3.24
+        }
+      ]
+    },
+    {
+      "page": "document-details",
+      "failures": [],
+      "controlBoundaries": []
+    },
+    {
+      "page": "ai-assistant",
+      "failures": [],
+      "controlBoundaries": [
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "ratio": 3.24
+        },
+        {
+          "tag": "TEXTAREA",
+          "id": "ai-question",
+          "ratio": 3.24
+        }
+      ]
+    },
+    {
+      "page": "dashboard-empty",
+      "failures": [],
+      "controlBoundaries": []
+    },
+    {
+      "page": "requests-empty",
+      "failures": [],
+      "controlBoundaries": [
+        {
+          "tag": "INPUT",
+          "id": "request-search",
+          "ratio": 3.24
+        },
+        {
+          "tag": "SELECT",
+          "id": "request-status",
+          "ratio": 3.24
+        },
+        {
+          "tag": "SELECT",
+          "id": "request-category",
+          "ratio": 3.24
+        }
+      ]
+    },
+    {
+      "page": "knowledge-base-empty",
+      "failures": [],
+      "controlBoundaries": [
+        {
+          "tag": "INPUT",
+          "id": "document-file",
+          "ratio": 3.11
+        },
+        {
+          "tag": "INPUT",
+          "id": "document-title",
+          "ratio": 3.24
+        },
+        {
+          "tag": "INPUT",
+          "id": "document-search",
+          "ratio": 3.24
+        },
+        {
+          "tag": "SELECT",
+          "id": "document-search-limit",
+          "ratio": 3.24
+        }
+      ]
+    },
+    {
+      "page": "requests-error",
+      "failures": [],
+      "controlBoundaries": [
+        {
+          "tag": "INPUT",
+          "id": "request-search",
+          "ratio": 3.24
+        },
+        {
+          "tag": "SELECT",
+          "id": "request-status",
+          "ratio": 3.24
+        },
+        {
+          "tag": "SELECT",
+          "id": "request-category",
+          "ratio": 3.24
+        }
+      ]
+    },
+    {
+      "page": "ai-error",
+      "failures": [],
+      "controlBoundaries": [
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "ratio": 3.24
+        },
+        {
+          "tag": "TEXTAREA",
+          "id": "ai-question",
+          "ratio": 3.24
+        }
+      ]
+    },
+    {
+      "page": "ai-no-context",
+      "failures": [],
+      "controlBoundaries": [
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "ratio": 3.24
+        },
+        {
+          "tag": "TEXTAREA",
+          "id": "ai-question",
+          "ratio": 3.24
+        }
+      ]
+    }
+  ],
+  "exceptions": [],
+  "blockedExternal": [],
+  "requests": [
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests/42",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests/42",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents/42",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents/42",
+      "method": "GET"
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/logout",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests/42",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests/42",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents/42",
+      "method": "GET"
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/logout",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests/42",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests/42",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents/42",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents/42",
+      "method": "GET"
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST"
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/logout",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests/42",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests/42",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents/42",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents/42",
+      "method": "GET"
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST"
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/logout",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests/42",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests/42",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents/42",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents/42",
+      "method": "GET"
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST"
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/login",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/logout",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST"
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST"
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST"
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST"
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/documents",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST"
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/auth/me",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    },
+    {
+      "path": "/api/requests",
+      "method": "GET"
+    }
+  ],
+  "verdict": "PASS"
+}

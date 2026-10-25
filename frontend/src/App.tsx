@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Link, Navigate, Route, Routes } from "react-router-dom";
 import { AppLayout } from "./components/layout/AppLayout";
 import { DashboardPage } from "./pages/DashboardPage";
-import { WelcomePage } from "./pages/WelcomePage";
+import { useAuth } from "./features/auth/auth-context";
 import { RequestsPage } from "./pages/RequestsPage";
 import { NewRequestPage, EditRequestPage } from "./pages/RequestFormPage";
 import { RequestDetailsPage } from "./pages/RequestDetailsPage";
@@ -12,6 +12,12 @@ import { DocumentDetailsPage } from "./pages/DocumentDetailsPage";
 import { AiAssistantPage } from "./pages/AiAssistantPage";
 import { AuthBoundary, ProtectedRoute } from "./features/auth/AuthProvider";
 import { LoginPage } from "./pages/LoginPage";
+
+// Mounted inside AuthBoundary: session bootstrap resolves before choosing a route.
+function WorkspaceEntry() {
+  const { session } = useAuth();
+  return <Navigate to={session ? "/dashboard" : "/login"} replace />;
+}
 
 export default function App({ client }: { client?: QueryClient } = {}) {
   const [queryClient] = useState(
@@ -33,8 +39,8 @@ export default function App({ client }: { client?: QueryClient } = {}) {
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<WelcomePage />} />
           <Route element={<AuthBoundary />}>
+            <Route path="/" element={<WorkspaceEntry />} />
             <Route path="/login" element={<LoginPage />} />
             <Route element={<ProtectedRoute />}>
               <Route element={<AppLayout />}>
@@ -62,7 +68,7 @@ export default function App({ client }: { client?: QueryClient } = {}) {
                 <h1>Page not found</h1>
                 <p>This page is not available.</p>
                 <Link className="text-link" to="/">
-                  Return to welcome
+                  Return to workspace
                 </Link>
               </main>
             }

@@ -1,0 +1,6 @@
+{
+  "python": "3.11.9",
+  "compilation": "PASS",
+  "dependencies": "No broken requirements found.",
+  "pdf_worker_startup": "2 passed"
+}

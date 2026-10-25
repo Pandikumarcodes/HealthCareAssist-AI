@@ -1,0 +1,25 @@
+{
+  "changedSinceSnapshot": [
+    "frontend/src/App.test.tsx",
+    "frontend/src/components/BackendStatus.tsx",
+    "frontend/src/components/layout/Icon.tsx",
+    "frontend/src/components/layout/Sidebar.tsx",
+    "frontend/src/features/ai-assistant/ai-assistant.css",
+    "frontend/src/features/auth/Auth.test.tsx",
+    "frontend/src/features/auth/auth.css",
+    "frontend/src/features/dashboard/Dashboard.test.tsx",
+    "frontend/src/features/dashboard/dashboard.css",
+    "frontend/src/features/knowledge-base/knowledge-base.css",
+    "frontend/src/features/requests/requests.css",
+    "frontend/src/index.css",
+    "frontend/src/pages/KnowledgeBasePage.tsx",
+    "frontend/src/pages/LoginPage.tsx",
+    "frontend/src/pages/RequestsPage.tsx",
+    "frontend/src/pages/WelcomePage.tsx"
+  ],
+  "protectedFilesChecked": 1527,
+  "protectedChanges": [],
+  "status": " M backend/app/auth.py\n M docs/demo-authentication.md\n D frontend/src/App.test.tsx\n M frontend/src/App.tsx\n D frontend/src/components/BackendStatus.tsx\n M frontend/src/components/layout/AppLayout.tsx\n M frontend/src/components/layout/Icon.tsx\n M frontend/src/components/layout/Sidebar.tsx\n M frontend/src/features/ai-assistant/ai-assistant.css\n M frontend/src/features/auth/Auth.test.tsx\n M frontend/src/features/auth/auth.css\n M frontend/src/features/dashboard/Dashboard.test.tsx\n M frontend/src/features/dashboard/dashboard.css\n M frontend/src/features/knowledge-base/DocumentUploadForm.tsx\n M frontend/src/features/knowledge-base/KnowledgeBase.test.tsx\n M frontend/src/features/knowledge-base/knowledge-base.css\n M frontend/src/features/requests/requests.css\n M frontend/src/index.css\n M frontend/src/pages/KnowledgeBasePage.tsx\n M frontend/src/pages/LoginPage.tsx\n M frontend/src/pages/RequestsPage.tsx\n D frontend/src/pages/WelcomePage.tsx\n M frontend/vite.config.ts\n?? .verification-artifacts/e2e-step-6.3/\n?? .verification-artifacts/frontend-ui-modernization/\n?? .verification-artifacts/security-step-6.2/\n?? backend/tests/test_security_polish.py\n?? docs/frontend-ui-modernization-report.md\n?? docs/step-6.2-implementation-report.md\n?? docs/step-6.3-e2e-verification-report.md\n?? frontend/src/EntryRouting.test.tsx\n?? frontend/src/components/layout/AppLayout.test.tsx\n?? start-backend.ps1\n?? start-frontend.ps1\n",
+  "diffCheck": "",
+  "note": "Snapshot was taken after the App.tsx root redirect patch and before the remaining UI edits. Initial Git status separately established App.tsx had no pre-existing changes."
+}

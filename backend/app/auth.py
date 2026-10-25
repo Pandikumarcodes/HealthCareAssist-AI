@@ -82,14 +82,15 @@ def login():
     request.max_content_length = 16 * 1024
     try:
         values = request.get_json(silent=True)
-    except (BadRequest, RequestEntityTooLarge):
+    except (BadRequest, RequestEntityTooLarge, RecursionError):
         values = None
     if not isinstance(values, dict) or set(values) != {"username", "password"}:
         return error("Invalid input.", 400, "auth_invalid_input")
     username, password = values["username"], values["password"]
     if (not isinstance(username, str) or not 1 <= len(username.strip()) <= 100
             or not isinstance(password, str) or not 1 <= len(password) <= 1024
-            or any(ord(c) < 32 for c in username) or "\0" in password):
+            or any(ord(c) < 32 for c in username) or "\0" in password
+            or any(0xD800 <= ord(c) <= 0xDFFF for c in username + password)):
         return error("Invalid input.", 400, "auth_invalid_input")
     # Always verify the hash, including when the username is wrong.
     matches = check_password_hash(current_app.config["DEMO_PASSWORD_HASH"], password)
@@ -136,6 +137,9 @@ def init_auth(app):
 
     @app.after_request
     def private_cache_control(response):
+        if request.path.startswith("/api/"):
+            response.headers.setdefault("X-Content-Type-Options", "nosniff")
+            response.headers.setdefault("Referrer-Policy", "same-origin")
         if request.path.startswith("/api/") and request.endpoint != "health.health_check":
             response.headers["Cache-Control"] = "no-store"
             response.vary.add("Cookie")

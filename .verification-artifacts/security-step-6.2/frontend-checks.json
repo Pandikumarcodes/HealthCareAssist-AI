@@ -1,0 +1,14 @@
+{
+  "typecheck": {
+    "exit_code": 0,
+    "output": "\n> frontend@0.0.0 typecheck\n> tsc -b\n\n"
+  },
+  "lint": {
+    "exit_code": 0,
+    "output": "\n> frontend@0.0.0 lint\n> oxlint\n\n"
+  },
+  "build": {
+    "exit_code": 0,
+    "output": "\n> frontend@0.0.0 build\n> tsc -b && vite build\n\nvite v8.3.5 building client environment for production...\ntransforming...\n\u00e2\u0153\u201c 109 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.53 kB \u00e2\u201d\u201a gzip:   0.33 kB\ndist/assets/index-DjpWiSMz.css   43.01 kB \u00e2\u201d\u201a gzip:   9.79 kB\ndist/assets/index-CP63hDsj.js   373.72 kB \u00e2\u201d\u201a gzip: 110.78 kB\n\n\u00e2\u0153\u201c built in 514ms\n"
+  }
+}

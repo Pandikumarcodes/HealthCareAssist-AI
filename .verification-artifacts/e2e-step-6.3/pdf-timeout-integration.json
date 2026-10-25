@@ -1,0 +1,678 @@
+{
+  "checks": [
+    {
+      "name": "real login, generic invalid credentials, token rotation, cookie attributes",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "session restoration over HTTP",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "empty dashboard",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "missing/invalid CSRF and cross-origin rejection",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "support validation",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "create/read/status persistence and dashboard fixture-derived counts",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "failed update/delete transaction rollback and subsequent recovery",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "request edit, literal search, filters and pagination on PostgreSQL",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "request deletion persisted",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "invalid, empty, corrupt, oversized and traversal PDF rejection",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "multipart CSRF enforcement",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "real PDF validation/extraction workers, indexed metadata and details",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "actual PostgreSQL full-text retrieval, page/chunk provenance, no matches and invalid ID",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "HTTP AI through PostgreSQL retrieval, bounded SDK mock, validated quotes/citations",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "AI no-context skips provider",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "empty and 1001 Unicode code-point question rejection",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "sanitized mocked provider invalid",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "sanitized mocked provider quota",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "sanitized mocked provider credentials",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "sanitized mocked provider timeout",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "sanitized mocked provider unavailable",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "fabricated evidence rejected",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "document deletion removes chunks, search entries and private PDF",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "controlled PDF processing failure and existing CLI retry lifecycle",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "sanitized database failure and recovery",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "logout invalidates current cookie and unauthenticated upload/API",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "Vite proxy: same-origin invalid login 401, cross-origin 403, valid login 200",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    }
+  ],
+  "latencies_ms": [
+    {
+      "method": "GET",
+      "path": "/requests",
+      "status": 401,
+      "ms": 9.88
+    },
+    {
+      "method": "GET",
+      "path": "/auth/me",
+      "status": 401,
+      "ms": 20.38
+    },
+    {
+      "method": "POST",
+      "path": "/auth/login",
+      "status": 403,
+      "ms": 26.85
+    },
+    {
+      "method": "POST",
+      "path": "/auth/login",
+      "status": 401,
+      "ms": 357.29
+    },
+    {
+      "method": "POST",
+      "path": "/auth/login",
+      "status": 200,
+      "ms": 277.63
+    },
+    {
+      "method": "GET",
+      "path": "/auth/me",
+      "status": 200,
+      "ms": 12.95
+    },
+    {
+      "method": "GET",
+      "path": "/dashboard/summary",
+      "status": 200,
+      "ms": 40.91
+    },
+    {
+      "method": "POST",
+      "path": "/requests",
+      "status": 403,
+      "ms": 23.89
+    },
+    {
+      "method": "POST",
+      "path": "/requests",
+      "status": 403,
+      "ms": 16.18
+    },
+    {
+      "method": "POST",
+      "path": "/requests",
+      "status": 403,
+      "ms": 12.66
+    },
+    {
+      "method": "POST",
+      "path": "/requests",
+      "status": 400,
+      "ms": 11.71
+    },
+    {
+      "method": "POST",
+      "path": "/requests",
+      "status": 201,
+      "ms": 40.23
+    },
+    {
+      "method": "POST",
+      "path": "/requests",
+      "status": 201,
+      "ms": 17.59
+    },
+    {
+      "method": "PATCH",
+      "path": "/requests/2",
+      "status": 200,
+      "ms": 20.31
+    },
+    {
+      "method": "POST",
+      "path": "/requests",
+      "status": 201,
+      "ms": 17.85
+    },
+    {
+      "method": "PATCH",
+      "path": "/requests/3",
+      "status": 200,
+      "ms": 15.6
+    },
+    {
+      "method": "GET",
+      "path": "/dashboard/summary",
+      "status": 200,
+      "ms": 17.69
+    },
+    {
+      "method": "PATCH",
+      "path": "/requests/1",
+      "status": 200,
+      "ms": 16.01
+    },
+    {
+      "method": "GET",
+      "path": "/requests/1",
+      "status": 200,
+      "ms": 29.89
+    },
+    {
+      "method": "PATCH",
+      "path": "/requests/1",
+      "status": 500,
+      "ms": 24.2
+    },
+    {
+      "method": "GET",
+      "path": "/requests/1",
+      "status": 200,
+      "ms": 10.76
+    },
+    {
+      "method": "DELETE",
+      "path": "/requests/1",
+      "status": 500,
+      "ms": 34.59
+    },
+    {
+      "method": "GET",
+      "path": "/requests/1",
+      "status": 200,
+      "ms": 16.08
+    },
+    {
+      "method": "GET",
+      "path": "/requests",
+      "status": 200,
+      "ms": 30.93
+    },
+    {
+      "method": "GET",
+      "path": "/requests",
+      "status": 200,
+      "ms": 26.13
+    },
+    {
+      "method": "GET",
+      "path": "/requests",
+      "status": 200,
+      "ms": 17.08
+    },
+    {
+      "method": "DELETE",
+      "path": "/requests/1",
+      "status": 204,
+      "ms": 30.8
+    },
+    {
+      "method": "GET",
+      "path": "/requests/1",
+      "status": 404,
+      "ms": 25.74
+    },
+    {
+      "method": "DELETE",
+      "path": "/requests/2",
+      "status": 204,
+      "ms": 20.39
+    },
+    {
+      "method": "GET",
+      "path": "/requests/2",
+      "status": 404,
+      "ms": 12.29
+    },
+    {
+      "method": "DELETE",
+      "path": "/requests/3",
+      "status": 204,
+      "ms": 38.3
+    },
+    {
+      "method": "GET",
+      "path": "/requests/3",
+      "status": 404,
+      "ms": 25.11
+    },
+    {
+      "method": "POST",
+      "path": "/documents",
+      "status": 400,
+      "ms": 29.96
+    },
+    {
+      "method": "POST",
+      "path": "/documents",
+      "status": 400,
+      "ms": 41.27
+    },
+    {
+      "method": "POST",
+      "path": "/documents",
+      "status": 400,
+      "ms": 472.53
+    },
+    {
+      "method": "POST",
+      "path": "/documents",
+      "status": 413,
+      "ms": 52.72
+    },
+    {
+      "method": "POST",
+      "path": "/documents",
+      "status": 400,
+      "ms": 23.11
+    },
+    {
+      "method": "POST",
+      "path": "/documents",
+      "status": 403,
+      "ms": 31.69
+    },
+    {
+      "method": "POST",
+      "path": "/documents",
+      "status": 201,
+      "ms": 1721.95
+    },
+    {
+      "method": "GET",
+      "path": "/documents/1",
+      "status": 200,
+      "ms": 33.06
+    },
+    {
+      "method": "GET",
+      "path": "/documents/search",
+      "status": 200,
+      "ms": 20.45
+    },
+    {
+      "method": "GET",
+      "path": "/documents/search",
+      "status": 200,
+      "ms": 30.24
+    },
+    {
+      "method": "GET",
+      "path": "/documents/invalid",
+      "status": 404,
+      "ms": 23.72
+    },
+    {
+      "method": "POST",
+      "path": "/ai/ask",
+      "status": 200,
+      "ms": 94.84
+    },
+    {
+      "method": "POST",
+      "path": "/ai/ask",
+      "status": 200,
+      "ms": 11.76
+    },
+    {
+      "method": "POST",
+      "path": "/ai/ask",
+      "status": 400,
+      "ms": 19.82
+    },
+    {
+      "method": "POST",
+      "path": "/ai/ask",
+      "status": 400,
+      "ms": 7.72
+    },
+    {
+      "method": "POST",
+      "path": "/ai/ask",
+      "status": 502,
+      "ms": 30.67
+    },
+    {
+      "method": "POST",
+      "path": "/ai/ask",
+      "status": 429,
+      "ms": 35.11
+    },
+    {
+      "method": "POST",
+      "path": "/ai/ask",
+      "status": 503,
+      "ms": 37.2
+    },
+    {
+      "method": "POST",
+      "path": "/ai/ask",
+      "status": 504,
+      "ms": 34.94
+    },
+    {
+      "method": "POST",
+      "path": "/ai/ask",
+      "status": 503,
+      "ms": 33.25
+    },
+    {
+      "method": "POST",
+      "path": "/ai/ask",
+      "status": 200,
+      "ms": 25.79
+    },
+    {
+      "method": "DELETE",
+      "path": "/documents/1",
+      "status": 204,
+      "ms": 52.43
+    },
+    {
+      "method": "GET",
+      "path": "/documents/search",
+      "status": 200,
+      "ms": 14.24
+    },
+    {
+      "method": "POST",
+      "path": "/documents",
+      "status": 201,
+      "ms": 421.97
+    },
+    {
+      "method": "GET",
+      "path": "/documents/2",
+      "status": 200,
+      "ms": 19.9
+    },
+    {
+      "method": "DELETE",
+      "path": "/documents/2",
+      "status": 204,
+      "ms": 31.21
+    },
+    {
+      "method": "GET",
+      "path": "/dashboard/summary",
+      "status": 503,
+      "ms": 11.97
+    },
+    {
+      "method": "GET",
+      "path": "/dashboard/summary",
+      "status": 200,
+      "ms": 13.5
+    },
+    {
+      "method": "POST",
+      "path": "/auth/logout",
+      "status": 200,
+      "ms": 8.86
+    },
+    {
+      "method": "GET",
+      "path": "/requests",
+      "status": 401,
+      "ms": 6.35
+    },
+    {
+      "method": "POST",
+      "path": "/documents",
+      "status": 401,
+      "ms": 25.78
+    }
+  ],
+  "provider_calls": [
+    {
+      "mode": "success",
+      "passages": [
+        {
+          "document_id": 1,
+          "document_title": "Fictional Cancellation Policy",
+          "page_number": 1,
+          "chunk_id": 1,
+          "text": "Demo Clinic appointment cancellation policy: Appointments can be cancelled 24 hours before the scheduled time."
+        }
+      ],
+      "question": "cancellation"
+    },
+    {
+      "mode": "invalid",
+      "passages": [
+        {
+          "document_id": 1,
+          "document_title": "Fictional Cancellation Policy",
+          "page_number": 1,
+          "chunk_id": 1,
+          "text": "Demo Clinic appointment cancellation policy: Appointments can be cancelled 24 hours before the scheduled time."
+        }
+      ],
+      "question": "cancellation"
+    },
+    {
+      "mode": "quota",
+      "passages": [
+        {
+          "document_id": 1,
+          "document_title": "Fictional Cancellation Policy",
+          "page_number": 1,
+          "chunk_id": 1,
+          "text": "Demo Clinic appointment cancellation policy: Appointments can be cancelled 24 hours before the scheduled time."
+        }
+      ],
+      "question": "cancellation"
+    },
+    {
+      "mode": "credentials",
+      "passages": [
+        {
+          "document_id": 1,
+          "document_title": "Fictional Cancellation Policy",
+          "page_number": 1,
+          "chunk_id": 1,
+          "text": "Demo Clinic appointment cancellation policy: Appointments can be cancelled 24 hours before the scheduled time."
+        }
+      ],
+      "question": "cancellation"
+    },
+    {
+      "mode": "timeout",
+      "passages": [
+        {
+          "document_id": 1,
+          "document_title": "Fictional Cancellation Policy",
+          "page_number": 1,
+          "chunk_id": 1,
+          "text": "Demo Clinic appointment cancellation policy: Appointments can be cancelled 24 hours before the scheduled time."
+        }
+      ],
+      "question": "cancellation"
+    },
+    {
+      "mode": "unavailable",
+      "passages": [
+        {
+          "document_id": 1,
+          "document_title": "Fictional Cancellation Policy",
+          "page_number": 1,
+          "chunk_id": 1,
+          "text": "Demo Clinic appointment cancellation policy: Appointments can be cancelled 24 hours before the scheduled time."
+        }
+      ],
+      "question": "cancellation"
+    },
+    {
+      "mode": "invented",
+      "passages": [
+        {
+          "document_id": 1,
+          "document_title": "Fictional Cancellation Policy",
+          "page_number": 1,
+          "chunk_id": 1,
+          "text": "Demo Clinic appointment cancellation policy: Appointments can be cancelled 24 hours before the scheduled time."
+        }
+      ],
+      "question": "cancellation"
+    },
+    {
+      "mode": "success",
+      "passages": [
+        {
+          "document_id": 3,
+          "document_title": "Fictional Cancellation 320",
+          "page_number": 1,
+          "chunk_id": 3,
+          "text": "Demo Clinic appointment cancellation policy: Appointments can be cancelled 24 hours before the scheduled time."
+        }
+      ],
+      "question": "cancellation"
+    }
+  ],
+  "blocked_network": [],
+  "live_gemini_calls": 0,
+  "isolation": {
+    "database": "hca_e2e_63_23081e1e0a28",
+    "superuser": false,
+    "createdb": false,
+    "createrole": false,
+    "role": "hca_e2e_63_23081e1e0a28_role",
+    "database_oid": 36807,
+    "migrations_head": "9d82b6f31a04",
+    "gin_index": true,
+    "new_resources_only": true
+  },
+  "document_validation_failures": [
+    {
+      "details": {
+        "file": "Only .pdf files are accepted."
+      },
+      "error": "Invalid input."
+    },
+    {
+      "details": {
+        "file": "The PDF file must not be empty."
+      },
+      "error": "Invalid input."
+    },
+    {
+      "details": {
+        "file": "Provide a valid, unencrypted PDF with at least one page."
+      },
+      "error": "Invalid input."
+    },
+    {
+      "details": {
+        "file": "Provide a filename without paths or control characters (maximum 255 characters)."
+      },
+      "error": "Invalid input."
+    },
+    {
+      "details": {
+        "file": "The PDF structure could not be validated within the time limit."
+      },
+      "error": "Invalid input."
+    }
+  ],
+  "browser_exit_code": 1,
+  "verdict": "FAIL",
+  "failure_type": "AssertionError",
+  "failure": "Integrated browser failed; see integrated-browser-report.json",
+  "cleanup": {
+    "new_database_removed": true,
+    "new_role_removed": true
+  }
+}

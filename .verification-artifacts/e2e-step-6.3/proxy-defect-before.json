@@ -1,0 +1,45 @@
+{
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/auth/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/me"
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/login"
+    }
+  ],
+  "responses": [
+    {
+      "path": "/api/auth/me",
+      "status": 401
+    },
+    {
+      "path": "/api/auth/login",
+      "status": 403
+    }
+  ],
+  "failuresInjected": [],
+  "layouts": [
+    {
+      "page": "login",
+      "width": 320,
+      "overflow": false,
+      "offscreen": []
+    }
+  ],
+  "workflows": [],
+  "exceptions": [],
+  "blockedExternal": [],
+  "browserVersion": "Chrome/155.0.8059.85",
+  "verdict": "FAIL",
+  "failure": "Timed out: generic credentials error",
+  "location": "/login",
+  "alerts": [
+    "Security check failed. Refresh this page and try again."
+  ]
+}

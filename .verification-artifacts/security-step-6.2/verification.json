@@ -1,0 +1,16 @@
+{
+  "backend_tests": 503,
+  "backend_original_cases_retained": 490,
+  "frontend_tests": 320,
+  "frontend_original_names_retained": 315,
+  "browser_layouts": 110,
+  "browser_workflows": 5,
+  "secret_non_disclosure": true,
+  "protected_files_unchanged": true,
+  "head_unchanged": true,
+  "frontend_checks": {
+    "typecheck": 0,
+    "lint": 0,
+    "build": 0
+  }
+}

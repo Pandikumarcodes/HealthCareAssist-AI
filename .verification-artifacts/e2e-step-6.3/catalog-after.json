@@ -1,0 +1,6 @@
+{
+  "read_only": "on",
+  "postgres_version": "18.4",
+  "original_database_catalog_unchanged": true,
+  "test_roles_remaining": 0
+}

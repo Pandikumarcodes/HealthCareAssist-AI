@@ -1,0 +1,134 @@
+[
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/320-integrated-ai.png",
+    "bytes": 50976
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/backend-checks.json",
+    "bytes": 141
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/backend-tests.xml",
+    "bytes": 101929
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/backend_checks.py",
+    "bytes": 1066
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/baseline.json",
+    "bytes": 261720
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/catalog-after.json",
+    "bytes": 134
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/catalog_after.py",
+    "bytes": 1309
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/cross-stack-report.json",
+    "bytes": 17853
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/environment.json",
+    "bytes": 1320
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/first-integration-run.json",
+    "bytes": 13787
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/frontend-checks.json",
+    "bytes": 751
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/frontend-tests-intermediate.json",
+    "bytes": 130903
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/frontend-tests.json",
+    "bytes": 130159
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/frontend_checks.py",
+    "bytes": 849
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/inspect_environment.py",
+    "bytes": 2862
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/integrated-browser-report.json",
+    "bytes": 49483
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/integrated-browser.mjs",
+    "bytes": 20551
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/mocked-browser-report.json",
+    "bytes": 30316
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/mocked-browser.log",
+    "bytes": 96
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/mocked-browser.mjs",
+    "bytes": 21302
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/pdf-startup.xml",
+    "bytes": 577
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/pdf-timeout-browser.json",
+    "bytes": 18017
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/pdf-timeout-integration.json",
+    "bytes": 16338
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/proxy-defect-before.json",
+    "bytes": 806
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/run_cross_stack.py",
+    "bytes": 23851
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/synthetic-policy.pdf",
+    "bytes": 930
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/test-plan.md",
+    "bytes": 2324
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/verification.json",
+    "bytes": 1105
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/verify_final.py",
+    "bytes": 4973
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/vite.log",
+    "bytes": 72
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/worker-timings.json",
+    "bytes": 868
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/worker_timings.py",
+    "bytes": 894
+  },
+  {
+    "path": ".verification-artifacts/e2e-step-6.3/inventory.json",
+    "purpose": "Generated exact file inventory; self-size omitted"
+  }
+]

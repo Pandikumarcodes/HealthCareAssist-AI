@@ -1,0 +1,37 @@
+{
+  "changed_preexisting_files": [
+    "frontend/vite.config.ts"
+  ],
+  "original_changes_preserved": true,
+  "env_unchanged": true,
+  "head_unchanged": true,
+  "staging_empty": true,
+  "secret_scan_passed": true,
+  "backend_total": 503,
+  "backend_categories": {
+    "backend.tests.test_ai": 104,
+    "backend.tests.test_auth": 59,
+    "backend.tests.test_dashboard": 20,
+    "backend.tests.test_database": 19,
+    "backend.tests.test_document_processing": 54,
+    "backend.tests.test_documents": 89,
+    "backend.tests.test_health": 3,
+    "backend.tests.test_pdf_worker_startup": 2,
+    "backend.tests.test_requests": 140,
+    "backend.tests.test_security_polish": 13
+  },
+  "original_backend_cases_retained": true,
+  "frontend_total": 320,
+  "original_frontend_cases_retained": true,
+  "postgres_http_scenarios": 28,
+  "postgres_http_requests": 63,
+  "mock_browser_layouts": 110,
+  "integrated_browser_layouts": 55,
+  "integrated_browser_journeys": 5,
+  "provider_mock_calls": 12,
+  "local_api_ms": {
+    "median": 23.5,
+    "max": 1367.1
+  },
+  "verdict": "PASS"
+}

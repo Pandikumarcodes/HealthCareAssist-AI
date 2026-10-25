@@ -1,0 +1,576 @@
+{
+  "checks": [
+    {
+      "name": "real login, generic invalid credentials, token rotation, cookie attributes",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "session restoration over HTTP",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "empty dashboard",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "missing/invalid CSRF and cross-origin rejection",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "support validation",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "create/read/status persistence and dashboard fixture-derived counts",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "request edit, literal search, filters and pagination on PostgreSQL",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "request deletion persisted",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "invalid, empty, corrupt, oversized and traversal PDF rejection",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "multipart CSRF enforcement",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "real PDF validation/extraction workers, indexed metadata and details",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "actual PostgreSQL full-text retrieval, page/chunk provenance, no matches and invalid ID",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "HTTP AI through PostgreSQL retrieval, bounded SDK mock, validated quotes/citations",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "AI no-context skips provider",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "empty and 1001 Unicode code-point question rejection",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "sanitized mocked provider invalid",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "sanitized mocked provider quota",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "sanitized mocked provider credentials",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "sanitized mocked provider timeout",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "sanitized mocked provider unavailable",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "fabricated evidence rejected",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "document deletion removes chunks, search entries and private PDF",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "sanitized database failure and recovery",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    },
+    {
+      "name": "logout invalidates current cookie and unauthenticated upload/API",
+      "status": "PASS",
+      "level": "HTTP Flask + isolated PostgreSQL (SDK mocked)"
+    }
+  ],
+  "latencies_ms": [
+    {
+      "method": "GET",
+      "path": "/requests",
+      "status": 401,
+      "ms": 32.34
+    },
+    {
+      "method": "GET",
+      "path": "/auth/me",
+      "status": 401,
+      "ms": 10.56
+    },
+    {
+      "method": "POST",
+      "path": "/auth/login",
+      "status": 403,
+      "ms": 8.08
+    },
+    {
+      "method": "POST",
+      "path": "/auth/login",
+      "status": 401,
+      "ms": 282.96
+    },
+    {
+      "method": "POST",
+      "path": "/auth/login",
+      "status": 200,
+      "ms": 267.46
+    },
+    {
+      "method": "GET",
+      "path": "/auth/me",
+      "status": 200,
+      "ms": 27.21
+    },
+    {
+      "method": "GET",
+      "path": "/dashboard/summary",
+      "status": 200,
+      "ms": 38.07
+    },
+    {
+      "method": "POST",
+      "path": "/requests",
+      "status": 403,
+      "ms": 20.1
+    },
+    {
+      "method": "POST",
+      "path": "/requests",
+      "status": 403,
+      "ms": 9.93
+    },
+    {
+      "method": "POST",
+      "path": "/requests",
+      "status": 403,
+      "ms": 8.17
+    },
+    {
+      "method": "POST",
+      "path": "/requests",
+      "status": 400,
+      "ms": 24.89
+    },
+    {
+      "method": "POST",
+      "path": "/requests",
+      "status": 201,
+      "ms": 50.81
+    },
+    {
+      "method": "POST",
+      "path": "/requests",
+      "status": 201,
+      "ms": 15.17
+    },
+    {
+      "method": "PATCH",
+      "path": "/requests/2",
+      "status": 200,
+      "ms": 38.72
+    },
+    {
+      "method": "POST",
+      "path": "/requests",
+      "status": 201,
+      "ms": 36.47
+    },
+    {
+      "method": "PATCH",
+      "path": "/requests/3",
+      "status": 200,
+      "ms": 39.14
+    },
+    {
+      "method": "GET",
+      "path": "/dashboard/summary",
+      "status": 200,
+      "ms": 22.9
+    },
+    {
+      "method": "PATCH",
+      "path": "/requests/1",
+      "status": 200,
+      "ms": 39.64
+    },
+    {
+      "method": "GET",
+      "path": "/requests/1",
+      "status": 200,
+      "ms": 11.18
+    },
+    {
+      "method": "GET",
+      "path": "/requests",
+      "status": 200,
+      "ms": 35.17
+    },
+    {
+      "method": "GET",
+      "path": "/requests",
+      "status": 200,
+      "ms": 13.12
+    },
+    {
+      "method": "GET",
+      "path": "/requests",
+      "status": 200,
+      "ms": 37.32
+    },
+    {
+      "method": "DELETE",
+      "path": "/requests/1",
+      "status": 204,
+      "ms": 26.68
+    },
+    {
+      "method": "GET",
+      "path": "/requests/1",
+      "status": 404,
+      "ms": 21.75
+    },
+    {
+      "method": "DELETE",
+      "path": "/requests/2",
+      "status": 204,
+      "ms": 12.79
+    },
+    {
+      "method": "GET",
+      "path": "/requests/2",
+      "status": 404,
+      "ms": 31.11
+    },
+    {
+      "method": "DELETE",
+      "path": "/requests/3",
+      "status": 204,
+      "ms": 36.41
+    },
+    {
+      "method": "GET",
+      "path": "/requests/3",
+      "status": 404,
+      "ms": 29.01
+    },
+    {
+      "method": "POST",
+      "path": "/documents",
+      "status": 400,
+      "ms": 14.96
+    },
+    {
+      "method": "POST",
+      "path": "/documents",
+      "status": 400,
+      "ms": 31.2
+    },
+    {
+      "method": "POST",
+      "path": "/documents",
+      "status": 400,
+      "ms": 523.32
+    },
+    {
+      "method": "POST",
+      "path": "/documents",
+      "status": 413,
+      "ms": 56.06
+    },
+    {
+      "method": "POST",
+      "path": "/documents",
+      "status": 400,
+      "ms": 25.56
+    },
+    {
+      "method": "POST",
+      "path": "/documents",
+      "status": 403,
+      "ms": 12.91
+    },
+    {
+      "method": "POST",
+      "path": "/documents",
+      "status": 201,
+      "ms": 1506.78
+    },
+    {
+      "method": "GET",
+      "path": "/documents/1",
+      "status": 200,
+      "ms": 32.03
+    },
+    {
+      "method": "GET",
+      "path": "/documents/search",
+      "status": 200,
+      "ms": 34.18
+    },
+    {
+      "method": "GET",
+      "path": "/documents/search",
+      "status": 200,
+      "ms": 13.26
+    },
+    {
+      "method": "GET",
+      "path": "/documents/invalid",
+      "status": 404,
+      "ms": 7.43
+    },
+    {
+      "method": "POST",
+      "path": "/ai/ask",
+      "status": 200,
+      "ms": 96.44
+    },
+    {
+      "method": "POST",
+      "path": "/ai/ask",
+      "status": 200,
+      "ms": 31.63
+    },
+    {
+      "method": "POST",
+      "path": "/ai/ask",
+      "status": 400,
+      "ms": 8.45
+    },
+    {
+      "method": "POST",
+      "path": "/ai/ask",
+      "status": 400,
+      "ms": 19.41
+    },
+    {
+      "method": "POST",
+      "path": "/ai/ask",
+      "status": 502,
+      "ms": 20.45
+    },
+    {
+      "method": "POST",
+      "path": "/ai/ask",
+      "status": 429,
+      "ms": 48.62
+    },
+    {
+      "method": "POST",
+      "path": "/ai/ask",
+      "status": 503,
+      "ms": 23.01
+    },
+    {
+      "method": "POST",
+      "path": "/ai/ask",
+      "status": 504,
+      "ms": 15.0
+    },
+    {
+      "method": "POST",
+      "path": "/ai/ask",
+      "status": 503,
+      "ms": 11.74
+    },
+    {
+      "method": "POST",
+      "path": "/ai/ask",
+      "status": 200,
+      "ms": 23.04
+    },
+    {
+      "method": "DELETE",
+      "path": "/documents/1",
+      "status": 204,
+      "ms": 34.54
+    },
+    {
+      "method": "GET",
+      "path": "/documents/search",
+      "status": 200,
+      "ms": 50.89
+    },
+    {
+      "method": "GET",
+      "path": "/dashboard/summary",
+      "status": 503,
+      "ms": 9.63
+    },
+    {
+      "method": "GET",
+      "path": "/dashboard/summary",
+      "status": 200,
+      "ms": 12.64
+    },
+    {
+      "method": "POST",
+      "path": "/auth/logout",
+      "status": 200,
+      "ms": 10.14
+    },
+    {
+      "method": "GET",
+      "path": "/requests",
+      "status": 401,
+      "ms": 9.11
+    },
+    {
+      "method": "POST",
+      "path": "/documents",
+      "status": 401,
+      "ms": 34.35
+    }
+  ],
+  "provider_calls": [
+    {
+      "mode": "success",
+      "passages": [
+        {
+          "document_id": 1,
+          "document_title": "Fictional Cancellation Policy",
+          "page_number": 1,
+          "chunk_id": 1,
+          "text": "Demo Clinic appointment cancellation policy: Appointments can be cancelled 24 hours before the scheduled time."
+        }
+      ],
+      "question": "cancellation"
+    },
+    {
+      "mode": "invalid",
+      "passages": [
+        {
+          "document_id": 1,
+          "document_title": "Fictional Cancellation Policy",
+          "page_number": 1,
+          "chunk_id": 1,
+          "text": "Demo Clinic appointment cancellation policy: Appointments can be cancelled 24 hours before the scheduled time."
+        }
+      ],
+      "question": "cancellation"
+    },
+    {
+      "mode": "quota",
+      "passages": [
+        {
+          "document_id": 1,
+          "document_title": "Fictional Cancellation Policy",
+          "page_number": 1,
+          "chunk_id": 1,
+          "text": "Demo Clinic appointment cancellation policy: Appointments can be cancelled 24 hours before the scheduled time."
+        }
+      ],
+      "question": "cancellation"
+    },
+    {
+      "mode": "credentials",
+      "passages": [
+        {
+          "document_id": 1,
+          "document_title": "Fictional Cancellation Policy",
+          "page_number": 1,
+          "chunk_id": 1,
+          "text": "Demo Clinic appointment cancellation policy: Appointments can be cancelled 24 hours before the scheduled time."
+        }
+      ],
+      "question": "cancellation"
+    },
+    {
+      "mode": "timeout",
+      "passages": [
+        {
+          "document_id": 1,
+          "document_title": "Fictional Cancellation Policy",
+          "page_number": 1,
+          "chunk_id": 1,
+          "text": "Demo Clinic appointment cancellation policy: Appointments can be cancelled 24 hours before the scheduled time."
+        }
+      ],
+      "question": "cancellation"
+    },
+    {
+      "mode": "unavailable",
+      "passages": [
+        {
+          "document_id": 1,
+          "document_title": "Fictional Cancellation Policy",
+          "page_number": 1,
+          "chunk_id": 1,
+          "text": "Demo Clinic appointment cancellation policy: Appointments can be cancelled 24 hours before the scheduled time."
+        }
+      ],
+      "question": "cancellation"
+    },
+    {
+      "mode": "invented",
+      "passages": [
+        {
+          "document_id": 1,
+          "document_title": "Fictional Cancellation Policy",
+          "page_number": 1,
+          "chunk_id": 1,
+          "text": "Demo Clinic appointment cancellation policy: Appointments can be cancelled 24 hours before the scheduled time."
+        }
+      ],
+      "question": "cancellation"
+    }
+  ],
+  "blocked_network": [],
+  "live_gemini_calls": 0,
+  "isolation": {
+    "database": "hca_e2e_63_824fa22765db",
+    "superuser": false,
+    "createdb": false,
+    "createrole": false,
+    "role": "hca_e2e_63_824fa22765db_role",
+    "database_oid": 36397,
+    "migrations_head": "9d82b6f31a04",
+    "gin_index": true,
+    "new_resources_only": true
+  },
+  "browser_exit_code": 1,
+  "verdict": "FAIL",
+  "failure_type": "AssertionError",
+  "failure": "Integrated browser failed; see integrated-browser-report.json",
+  "cleanup": {
+    "new_database_removed": true,
+    "new_role_removed": true
+  }
+}

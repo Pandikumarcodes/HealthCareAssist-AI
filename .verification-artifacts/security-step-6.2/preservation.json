@@ -1,0 +1,19 @@
+{
+  "changed": [
+    "backend/app/auth.py",
+    "docs/demo-authentication.md",
+    "frontend/src/components/layout/AppLayout.tsx",
+    "frontend/src/features/ai-assistant/ai-assistant.css",
+    "frontend/src/features/auth/auth.css",
+    "frontend/src/features/dashboard/dashboard.css",
+    "frontend/src/features/knowledge-base/DocumentUploadForm.tsx",
+    "frontend/src/features/knowledge-base/KnowledgeBase.test.tsx",
+    "frontend/src/features/knowledge-base/knowledge-base.css",
+    "frontend/src/features/requests/requests.css",
+    "frontend/src/index.css",
+    "frontend/src/pages/KnowledgeBasePage.tsx"
+  ],
+  "protected_files_unchanged": true,
+  "head_unchanged": true,
+  "missing": []
+}

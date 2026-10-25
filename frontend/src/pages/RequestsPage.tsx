@@ -190,8 +190,8 @@ export function RequestsPage() {
           <div>
             <strong>Unable to load support requests</strong>
             <p>
-              Check your connection and that the Flask backend is running, then
-              try again. You can also clear or adjust your filters.
+              Check your connection and try again. You can also clear or adjust
+              your filters.
             </p>
           </div>
           <button

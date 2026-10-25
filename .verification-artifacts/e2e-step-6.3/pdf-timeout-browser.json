@@ -1,0 +1,1033 @@
+{
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/auth/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/me"
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/login"
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/login"
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard/summary"
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard/summary"
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard/summary"
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard/summary"
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard/summary"
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard/summary"
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard/summary"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "POST",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard/summary"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests/4"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests/4"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests/4"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/requests/4"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/requests/4"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests/4"
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard/summary"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/requests/4"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests/4"
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard/summary"
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests/4"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests/4"
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard/summary"
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard/summary"
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard/summary"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/requests/4"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/requests/4"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard/summary"
+    },
+    {
+      "method": "GET",
+      "path": "/api/documents"
+    },
+    {
+      "method": "GET",
+      "path": "/api/documents"
+    },
+    {
+      "method": "POST",
+      "path": "/api/documents"
+    },
+    {
+      "method": "GET",
+      "path": "/api/documents"
+    },
+    {
+      "method": "GET",
+      "path": "/api/documents/search"
+    },
+    {
+      "method": "GET",
+      "path": "/api/documents/search"
+    },
+    {
+      "method": "POST",
+      "path": "/api/ai/ask"
+    },
+    {
+      "method": "POST",
+      "path": "/api/ai/ask"
+    },
+    {
+      "method": "POST",
+      "path": "/api/ai/ask"
+    },
+    {
+      "method": "POST",
+      "path": "/api/ai/ask"
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/documents/3"
+    },
+    {
+      "method": "GET",
+      "path": "/api/documents/3"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/documents/3"
+    },
+    {
+      "method": "GET",
+      "path": "/api/documents/3"
+    },
+    {
+      "method": "GET",
+      "path": "/api/documents"
+    },
+    {
+      "method": "GET",
+      "path": "/api/documents"
+    },
+    {
+      "method": "POST",
+      "path": "/api/ai/ask"
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/logout"
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/me"
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/login"
+    },
+    {
+      "method": "GET",
+      "path": "/api/documents"
+    },
+    {
+      "method": "GET",
+      "path": "/api/documents"
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/me"
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/login"
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/login"
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard/summary"
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard/summary"
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard/summary"
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard/summary"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "POST",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard/summary"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests/5"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests/5"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/requests/5"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests/5"
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard/summary"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/requests/5"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests/5"
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard/summary"
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests/5"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests/5"
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard/summary"
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard/summary"
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard/summary"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/requests/5"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/requests"
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard/summary"
+    },
+    {
+      "method": "GET",
+      "path": "/api/documents"
+    },
+    {
+      "method": "GET",
+      "path": "/api/documents"
+    },
+    {
+      "method": "POST",
+      "path": "/api/documents"
+    },
+    {
+      "method": "GET",
+      "path": "/api/documents"
+    }
+  ],
+  "responses": [
+    {
+      "path": "/api/auth/me",
+      "status": 401
+    },
+    {
+      "path": "/api/auth/login",
+      "status": 401
+    },
+    {
+      "path": "/api/auth/login",
+      "status": 200
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/me",
+      "status": 200
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/me",
+      "status": 200
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "status": 200
+    },
+    {
+      "path": "/api/requests",
+      "status": 200
+    },
+    {
+      "path": "/api/requests",
+      "status": 201
+    },
+    {
+      "path": "/api/requests",
+      "status": 200
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "status": 200
+    },
+    {
+      "path": "/api/requests/4",
+      "status": 200
+    },
+    {
+      "path": "/api/requests/4",
+      "status": 200
+    },
+    {
+      "path": "/api/requests/4",
+      "status": 500
+    },
+    {
+      "path": "/api/requests/4",
+      "status": 200
+    },
+    {
+      "path": "/api/requests/4",
+      "status": 200
+    },
+    {
+      "path": "/api/requests",
+      "status": 200
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "status": 200
+    },
+    {
+      "path": "/api/requests/4",
+      "status": 200
+    },
+    {
+      "path": "/api/requests",
+      "status": 200
+    },
+    {
+      "path": "/api/requests/4",
+      "status": 200
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/me",
+      "status": 200
+    },
+    {
+      "path": "/api/requests/4",
+      "status": 200
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "status": 200
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "status": 200
+    },
+    {
+      "path": "/api/requests",
+      "status": 200
+    },
+    {
+      "path": "/api/requests",
+      "status": 200
+    },
+    {
+      "path": "/api/requests/4",
+      "status": 500
+    },
+    {
+      "path": "/api/requests/4",
+      "status": 204
+    },
+    {
+      "path": "/api/requests",
+      "status": 200
+    },
+    {
+      "path": "/api/requests",
+      "status": 200
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "status": 200
+    },
+    {
+      "path": "/api/documents",
+      "status": 200
+    },
+    {
+      "path": "/api/documents",
+      "status": 201
+    },
+    {
+      "path": "/api/documents",
+      "status": 200
+    },
+    {
+      "path": "/api/documents/search",
+      "status": 200
+    },
+    {
+      "path": "/api/documents/search",
+      "status": 200
+    },
+    {
+      "path": "/api/ai/ask",
+      "status": 200
+    },
+    {
+      "path": "/api/ai/ask",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/me",
+      "status": 200
+    },
+    {
+      "path": "/api/documents/3",
+      "status": 200
+    },
+    {
+      "path": "/api/documents/3",
+      "status": 204
+    },
+    {
+      "path": "/api/documents",
+      "status": 200
+    },
+    {
+      "path": "/api/ai/ask",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/logout",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/me",
+      "status": 401
+    },
+    {
+      "path": "/api/auth/me",
+      "status": 401
+    },
+    {
+      "path": "/api/auth/login",
+      "status": 200
+    },
+    {
+      "path": "/api/documents",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/me",
+      "status": 401
+    },
+    {
+      "path": "/api/auth/me",
+      "status": 401
+    },
+    {
+      "path": "/api/auth/login",
+      "status": 401
+    },
+    {
+      "path": "/api/auth/login",
+      "status": 200
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/me",
+      "status": 200
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "status": 200
+    },
+    {
+      "path": "/api/requests",
+      "status": 200
+    },
+    {
+      "path": "/api/requests",
+      "status": 201
+    },
+    {
+      "path": "/api/requests",
+      "status": 200
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "status": 200
+    },
+    {
+      "path": "/api/requests/5",
+      "status": 200
+    },
+    {
+      "path": "/api/requests/5",
+      "status": 200
+    },
+    {
+      "path": "/api/requests/5",
+      "status": 200
+    },
+    {
+      "path": "/api/requests",
+      "status": 200
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "status": 200
+    },
+    {
+      "path": "/api/requests/5",
+      "status": 200
+    },
+    {
+      "path": "/api/requests/5",
+      "status": 200
+    },
+    {
+      "path": "/api/requests",
+      "status": 200
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/me",
+      "status": 200
+    },
+    {
+      "path": "/api/requests/5",
+      "status": 200
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "status": 200
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "status": 200
+    },
+    {
+      "path": "/api/requests",
+      "status": 200
+    },
+    {
+      "path": "/api/requests",
+      "status": 200
+    },
+    {
+      "path": "/api/requests/5",
+      "status": 204
+    },
+    {
+      "path": "/api/requests",
+      "status": 200
+    },
+    {
+      "path": "/api/requests",
+      "status": 200
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "status": 200
+    },
+    {
+      "path": "/api/documents",
+      "status": 200
+    },
+    {
+      "path": "/api/documents",
+      "status": 400
+    },
+    {
+      "path": "/api/documents",
+      "status": 200
+    }
+  ],
+  "failuresInjected": [
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET",
+      "type": "network"
+    },
+    {
+      "path": "/api/dashboard/summary",
+      "method": "GET",
+      "type": "network"
+    },
+    {
+      "path": "/api/requests/4",
+      "method": "PATCH",
+      "type": "HTTP 500"
+    },
+    {
+      "path": "/api/requests/4",
+      "method": "DELETE",
+      "type": "HTTP 500"
+    },
+    {
+      "path": "/api/ai/ask",
+      "method": "POST",
+      "type": "network"
+    }
+  ],
+  "layouts": [
+    {
+      "page": "login",
+      "width": 320,
+      "overflow": false,
+      "offscreen": []
+    },
+    {
+      "page": "dashboard",
+      "width": 320,
+      "overflow": false,
+      "offscreen": []
+    },
+    {
+      "page": "requests",
+      "width": 320,
+      "overflow": false,
+      "offscreen": []
+    },
+    {
+      "page": "new-request",
+      "width": 320,
+      "overflow": false,
+      "offscreen": []
+    },
+    {
+      "page": "request-details",
+      "width": 320,
+      "overflow": false,
+      "offscreen": []
+    },
+    {
+      "page": "edit-request",
+      "width": 320,
+      "overflow": false,
+      "offscreen": []
+    },
+    {
+      "page": "request-dialog",
+      "width": 320,
+      "overflow": false,
+      "offscreen": []
+    },
+    {
+      "page": "knowledge-base-search",
+      "width": 320,
+      "overflow": false,
+      "offscreen": []
+    },
+    {
+      "page": "document-details",
+      "width": 320,
+      "overflow": false,
+      "offscreen": []
+    },
+    {
+      "page": "ai-grounded-citations",
+      "width": 320,
+      "overflow": false,
+      "offscreen": []
+    },
+    {
+      "page": "document-dialog",
+      "width": 320,
+      "overflow": false,
+      "offscreen": []
+    },
+    {
+      "page": "login",
+      "width": 375,
+      "overflow": false,
+      "offscreen": []
+    },
+    {
+      "page": "dashboard",
+      "width": 375,
+      "overflow": false,
+      "offscreen": []
+    },
+    {
+      "page": "requests",
+      "width": 375,
+      "overflow": false,
+      "offscreen": []
+    },
+    {
+      "page": "new-request",
+      "width": 375,
+      "overflow": false,
+      "offscreen": []
+    },
+    {
+      "page": "request-details",
+      "width": 375,
+      "overflow": false,
+      "offscreen": []
+    },
+    {
+      "page": "edit-request",
+      "width": 375,
+      "overflow": false,
+      "offscreen": []
+    },
+    {
+      "page": "request-dialog",
+      "width": 375,
+      "overflow": false,
+      "offscreen": []
+    }
+  ],
+  "workflows": [
+    {
+      "width": 320,
+      "authentication": true,
+      "restoration": true,
+      "dashboard": true,
+      "requestCRUD": true,
+      "searchFilter": true,
+      "pdf": true,
+      "postgresSearch": true,
+      "aiGrounding": true,
+      "citations": true,
+      "noContext": true,
+      "duplicatePrevention": true,
+      "routeCancellation": true,
+      "clearChat": true,
+      "logout": true,
+      "expiredSession": true,
+      "storageEmpty": true
+    }
+  ],
+  "exceptions": [],
+  "blockedExternal": [],
+  "browserVersion": "Chrome/155.0.8059.85",
+  "verdict": "FAIL",
+  "failure": "Timed out: real PDF upload and extraction",
+  "location": "/knowledge-base",
+  "alerts": [
+    "Unable to upload this document. Check the fields below."
+  ],
+  "fieldErrors": [
+    "Unable to upload this document. Check the fields below.",
+    "The backend could not validate this PDF. Choose a complete, unencrypted PDF with at least one page."
+  ]
+}

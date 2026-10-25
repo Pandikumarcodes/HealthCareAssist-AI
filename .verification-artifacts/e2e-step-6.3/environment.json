@@ -1,0 +1,57 @@
+{
+  "python": "3.11.9",
+  "node": "v24.18.0",
+  "packages": {
+    "Flask": "3.1.3",
+    "SQLAlchemy": "2.1.6",
+    "Flask-Migrate": "4.1.0",
+    "psycopg": "3.3.6",
+    "pytest": "9.1.1",
+    "PyMuPDF": "1.28.2",
+    "google-genai": "2.33.0"
+  },
+  "database": {
+    "host": "localhost",
+    "port": 7498,
+    "database": "healthcareassist_ai",
+    "driver": "postgresql+psycopg",
+    "application_credentials_available": true
+  },
+  "dedicated_test_environment_present": false,
+  "postgresql": {
+    "connected": true,
+    "read_only": "on",
+    "role": {
+      "rolsuper": true,
+      "rolcreatedb": true,
+      "rolcreaterole": true
+    },
+    "databases": [
+      {
+        "name": "healthcareassist_ai",
+        "owned_by_current_role": true,
+        "description": null
+      },
+      {
+        "name": "hiringloop_dev",
+        "owned_by_current_role": true,
+        "description": null
+      },
+      {
+        "name": "hiringloop_test",
+        "owned_by_current_role": true,
+        "description": null
+      },
+      {
+        "name": "postgres",
+        "owned_by_current_role": true,
+        "description": null
+      },
+      {
+        "name": "postgresql_part1",
+        "owned_by_current_role": true,
+        "description": null
+      }
+    ]
+  }
+}

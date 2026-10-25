@@ -1,0 +1,12 @@
+import { readFileSync, existsSync, writeFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { execFileSync } from 'node:child_process';
+const root = new URL('../../', import.meta.url);
+const baseline = JSON.parse(readFileSync(new URL('./baseline-hashes.json', import.meta.url), 'utf8').replace(/^\uFEFF/, ''));
+const changed = baseline.filter(item => !existsSync(new URL(item.path, root)) || createHash('sha256').update(readFileSync(new URL(item.path, root))).digest('hex').toUpperCase() !== item.hash).map(item => item.path);
+const protectedPaths = baseline.filter(item => item.path.startsWith('backend/') || item.path.startsWith('frontend/src/services/') || item.path.startsWith('frontend/src/features/auth/AuthProvider') || item.path.endsWith('.env') || /package(?:-lock)?\.json$/.test(item.path));
+const protectedChanges = protectedPaths.filter(item => changed.includes(item.path)).map(item => item.path);
+const report = { changedSinceSnapshot: changed, protectedFilesChecked: protectedPaths.length, protectedChanges, status: execFileSync('git', ['status', '--short'], {cwd: root, encoding: 'utf8'}), diffCheck: execFileSync('git', ['diff', '--check'], {cwd: root, encoding: 'utf8'}), note: 'Snapshot was taken after the App.tsx root redirect patch and before the remaining UI edits. Initial Git status separately established App.tsx had no pre-existing changes.' };
+writeFileSync(new URL('./safety-review.json', import.meta.url), JSON.stringify(report, null, 2));
+console.log(JSON.stringify({changed, protectedFilesChecked: protectedPaths.length, protectedChanges}));
+if (protectedChanges.length) process.exitCode = 1;
