@@ -30,6 +30,19 @@ def create_app(test_config: Mapping[str, object] | None = None) -> Flask:
     if test_config is not None:
         app.config.from_mapping(test_config)
 
+    from app.pdf_storage import validate_configuration
+    validate_configuration(app.config)
+
+    if app.config.get("RENDER_DEPLOYMENT"):
+        # Render terminates public HTTPS. Ignore client-supplied proxy headers.
+        original_app = app.wsgi_app
+
+        def render_https(environ, start_response):
+            environ["wsgi.url_scheme"] = "https"
+            return original_app(environ, start_response)
+
+        app.wsgi_app = render_https
+
     db.init_app(app)
     migrate.init_app(app, db, directory=str(BACKEND_DIRECTORY / "migrations"))
     app.cli.add_command(check_database_command)
@@ -40,5 +53,22 @@ def create_app(test_config: Mapping[str, object] | None = None) -> Flask:
     app.register_blueprint(documents_bp, url_prefix="/api")
     app.register_blueprint(ai_bp, url_prefix="/api")
     init_auth(app)
+
+    if app.config.get("SERVE_FRONTEND"):
+        from pathlib import Path
+        from flask import abort, send_from_directory
+
+        frontend = Path(app.config.get("FRONTEND_DIST", BACKEND_DIRECTORY.parent / "frontend" / "dist"))
+
+        @app.get("/", defaults={"path": ""})
+        @app.get("/<path:path>")
+        def frontend_app(path):
+            if path == "api" or path.startswith("api/"):
+                abort(404)
+            if path and (frontend / path).is_file():
+                return send_from_directory(frontend, path)
+            if path and (path.startswith("assets/") or Path(path).suffix):
+                abort(404)
+            return send_from_directory(frontend, "index.html")
 
     return app

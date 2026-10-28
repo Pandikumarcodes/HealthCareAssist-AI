@@ -109,6 +109,16 @@ def document_path(stored_filename):
 
 
 def write_upload(content):
+    from app.pdf_storage import remote_storage, SupabasePDFStorage
+    if remote_storage():
+        name = uuid4().hex + ".pdf"
+        try:
+            SupabasePDFStorage().save(name, content)
+        except OSError:
+            # An unknown upload outcome or collision must never trigger a delete.
+            current_app.logger.error("PDF upload unconfirmed; object %s may need reconciliation.", name)
+            raise
+        return name, name
     directory = storage_directory()
     directory.mkdir(parents=True, exist_ok=True, mode=0o700)
     for _ in range(5):
@@ -130,9 +140,17 @@ def write_upload(content):
 
 def cleanup_upload(path):
     try:
-        path.unlink(missing_ok=True)
+        from app.pdf_storage import remote_storage, SupabasePDFStorage
+        if remote_storage():
+            SupabasePDFStorage().delete(path)
+        else:
+            path.unlink(missing_ok=True)
     except OSError:
-        current_app.logger.error("Document upload cleanup failed; private storage needs reconciliation.")
+        from app.pdf_storage import remote_storage
+        if remote_storage():
+            current_app.logger.error("PDF upload cleanup failed; object %s needs reconciliation.", path)
+        else:
+            current_app.logger.error("Document upload cleanup failed; private storage needs reconciliation.")
 
 
 def serialize_document(item):
@@ -179,6 +197,9 @@ def list_documents(args):
 
 
 def delete_document(item):
+    from app.pdf_storage import remote_storage, delete_remote_document
+    if remote_storage():
+        return delete_remote_document(item)
     path = document_path(item.stored_filename)
     document_id, stored_filename = item.id, item.stored_filename
     staged = None

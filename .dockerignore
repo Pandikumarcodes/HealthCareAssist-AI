@@ -1,0 +1,16 @@
+**/.env
+**/.env.*
+**/instance
+**/.venv*
+**/node_modules
+**/dist
+**/__pycache__
+**/*.pdf
+**/*.pem
+**/*.key
+**/credentials.json
+.git
+.aws
+.codex
+.agents
+.verification-artifacts

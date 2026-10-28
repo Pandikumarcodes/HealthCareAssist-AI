@@ -1,0 +1,111 @@
+name: Linux verification
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    defaults:
+      run:
+        shell: bash
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+      PYTHONUNBUFFERED: "1"
+      PYTHONPATH: ${{ github.workspace }}/.github/scripts:${{ github.workspace }}/backend
+      DATABASE_URL: postgresql+psycopg://ci:ci@127.0.0.1:9/ci?sslmode=require
+      PDF_STORAGE_BACKEND: local
+      GEMINI_API_KEY: ""
+      GOOGLE_API_KEY: ""
+      SUPABASE_URL: ""
+      SUPABASE_SECRET_KEY: ""
+      SUPABASE_STORAGE_BUCKET: ""
+      SESSION_COOKIE_SECURE: "true"
+      FLASK_DEBUG: "false"
+      VITE_API_BASE_URL: ""
+
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+          clean: false
+
+      - uses: actions/setup-python@v7.1.0
+        with:
+          python-version: "3.11.9"
+
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: "24"
+          package-manager-cache: false
+
+      - name: Install declared dependencies
+        id: dependencies
+        run: |
+          printf 'CI_EVIDENCE=%s/linux-verification\n' "$RUNNER_TEMP" >> "$GITHUB_ENV"
+          mkdir -p "$RUNNER_TEMP/linux-verification"
+          python -m pip install -r backend/requirements.txt
+          python -m pip check
+          npm ci --prefix frontend
+
+      - name: Verify imports and record versions
+        if: ${{ !cancelled() && steps.dependencies.outcome == 'success' }}
+        env:
+          HCA_CI_OFFLINE: "1"
+        run: python .github/scripts/linux_verify.py versions
+
+      - name: TypeScript typecheck
+        if: ${{ !cancelled() && steps.dependencies.outcome == 'success' }}
+        working-directory: frontend
+        run: npm run typecheck
+
+      - name: Oxlint
+        if: ${{ !cancelled() && steps.dependencies.outcome == 'success' }}
+        working-directory: frontend
+        run: npm run lint
+
+      - name: Full Vitest suite
+        if: ${{ !cancelled() && steps.dependencies.outcome == 'success' }}
+        working-directory: frontend
+        run: npm run test -- --reporter=default --reporter=junit --outputFile="$CI_EVIDENCE/frontend.xml"
+
+      - name: Build production frontend
+        id: build
+        if: ${{ !cancelled() && steps.dependencies.outcome == 'success' }}
+        working-directory: frontend
+        run: npm run build
+
+      - name: Full backend suite with native worker observations
+        if: ${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.build.outcome == 'success' }}
+        env:
+          HCA_CI_OFFLINE: "1"
+        run: python .github/scripts/linux_verify.py backend
+
+      - name: Gunicorn and compiled frontend smoke check
+        if: ${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.build.outcome == 'success' }}
+        env:
+          HCA_CI_OFFLINE: "1"
+        run: python .github/scripts/linux_verify.py smoke
+
+      - name: Synthetic PDF stage timing
+        if: ${{ !cancelled() && steps.dependencies.outcome == 'success' }}
+        env:
+          HCA_CI_OFFLINE: "1"
+        run: python .github/scripts/linux_verify.py pdf
+
+      - name: Summarize available evidence
+        if: ${{ always() && steps.dependencies.outcome == 'success' }}
+        run: python .github/scripts/linux_verify.py summary
+
+      - name: Preserve verification evidence
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: linux-verification-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/linux-verification/
+          retention-days: 7
+          if-no-files-found: warn

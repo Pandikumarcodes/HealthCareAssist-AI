@@ -5,10 +5,11 @@ from flask import current_app
 from flask.cli import with_appcontext
 from sqlalchemy import delete
 
-from app.documents import document_path, find_document
+from app.documents import find_document
 from app.extensions import db
 from app.models import DocumentChunk
 from app.pdf_extraction import ExtractionError, extract_chunks
+from app.pdf_storage import retrieve_pdf, StorageError
 
 
 def index_document(item):
@@ -16,7 +17,11 @@ def index_document(item):
     if item.processing_status in {"INDEXED", "NO_TEXT"}:
         return
     try:
-        chunks = extract_chunks(document_path(item.stored_filename))
+        with retrieve_pdf(item.stored_filename) as path:
+            chunks = extract_chunks(path)
+    except StorageError:
+        # Storage failure must roll back an upload, not masquerade as parser failure.
+        raise
     except (ExtractionError, OSError):
         chunks = []
         outcome = "FAILED"

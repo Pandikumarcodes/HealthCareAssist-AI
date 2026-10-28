@@ -23,6 +23,14 @@ class Config:
     SESSION_REFRESH_EACH_REQUEST = False
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     DOCUMENT_UPLOAD_DIR = str(BACKEND_DIRECTORY / "instance" / "document_uploads")
+    PDF_STORAGE_BACKEND = "local"
+    SUPABASE_URL = ""
+    SUPABASE_SECRET_KEY = ""
+    SUPABASE_STORAGE_BUCKET = ""
+    PDF_STORAGE_BACKEND = "local"
+    SUPABASE_URL = ""
+    SUPABASE_SECRET_KEY = ""
+    SUPABASE_STORAGE_BUCKET = ""
     GEMINI_API_KEY = ""
     GEMINI_MODEL = "gemini-3.5-flash-lite"
     GEMINI_TIMEOUT_SECONDS = 20
@@ -42,6 +50,7 @@ def local_configuration() -> dict[str, object]:
     # PDF workers need BACKEND_DIRECTORY, never local settings or the ORM.
     from dotenv import load_dotenv
     from sqlalchemy.engine import URL
+    from urllib.parse import parse_qs, urlsplit
 
     load_dotenv(BACKEND_DIRECTORY / ".env", override=False)
     database_url = os.getenv("DATABASE_URL", "").strip()
@@ -75,7 +84,28 @@ def local_configuration() -> dict[str, object]:
             break
     if isinstance(database_url, str) and not database_url.startswith("postgresql+psycopg://"):
         raise RuntimeError("DATABASE_URL must use PostgreSQL with the psycopg driver.")
+    render = os.getenv("RENDER_DEPLOYMENT", "false").lower() == "true"
+    trusted_host = os.getenv("PUBLIC_HOST", "").strip()
+    if render:
+        import re
+        if not re.fullmatch(r"[a-zA-Z0-9](?:[a-zA-Z0-9.-]*[a-zA-Z0-9])?", trusted_host) or "." not in trusted_host:
+            raise RuntimeError("PUBLIC_HOST must be the exact public hostname.")
+        if os.getenv("SESSION_COOKIE_SECURE", "true").lower() == "false":
+            raise RuntimeError("Secure cookies are required on Render.")
+        if not isinstance(database_url, str) or parse_qs(urlsplit(database_url).query).get("sslmode") not in (["require"], ["verify-ca"], ["verify-full"]):
+            raise RuntimeError("Render DATABASE_URL must specify an encrypted sslmode.")
     return {
+        "PDF_STORAGE_BACKEND": os.getenv("PDF_STORAGE_BACKEND", "local").strip(),
+        "SUPABASE_URL": os.getenv("SUPABASE_URL", "").strip(),
+        "SUPABASE_SECRET_KEY": os.getenv("SUPABASE_SECRET_KEY", "").strip(),
+        "SUPABASE_STORAGE_BUCKET": os.getenv("SUPABASE_STORAGE_BUCKET", "").strip(),
+        "PDF_STORAGE_BACKEND": os.getenv("PDF_STORAGE_BACKEND", "local").strip(),
+        "SUPABASE_URL": os.getenv("SUPABASE_URL", "").strip(),
+        "SUPABASE_SECRET_KEY": os.getenv("SUPABASE_SECRET_KEY", "").strip(),
+        "SUPABASE_STORAGE_BUCKET": os.getenv("SUPABASE_STORAGE_BUCKET", "").strip(),
+        "RENDER_DEPLOYMENT": render,
+        "SERVE_FRONTEND": render,
+        "TRUSTED_HOSTS": [trusted_host] if render else None,
         "SECRET_KEY": os.getenv("SECRET_KEY", ""),
         "DEMO_USERNAME": os.getenv("DEMO_USERNAME", "").strip(),
         "DEMO_PASSWORD_HASH": os.getenv("DEMO_PASSWORD_HASH", ""),
@@ -87,7 +117,7 @@ def local_configuration() -> dict[str, object]:
         "GEMINI_MAX_OUTPUT_TOKENS": os.getenv("GEMINI_MAX_OUTPUT_TOKENS", "1024"),
         "DOCUMENT_UPLOAD_DIR": os.getenv("DOCUMENT_UPLOAD_DIR", "").strip()
         or str(BACKEND_DIRECTORY / "instance" / "document_uploads"),
-        "DEBUG": os.getenv("FLASK_DEBUG", "false").lower() == "true",
+        "DEBUG": False if render else os.getenv("FLASK_DEBUG", "false").lower() == "true",
         "SQLALCHEMY_DATABASE_URI": database_url,
         "SQLALCHEMY_ENGINE_OPTIONS": {
             "pool_pre_ping": True,

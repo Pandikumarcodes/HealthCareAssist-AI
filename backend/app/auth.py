@@ -125,7 +125,7 @@ def init_auth(app):
     def protect_api():
         # Unknown routes retain the existing 404 behavior. All registered API
         # operations are private unless explicitly listed here, including future ones.
-        if request.endpoint is None or not request.path.startswith("/api/") or request.endpoint == "health.health_check":
+        if request.endpoint in (None, "frontend_app") or not request.path.startswith("/api/") or request.endpoint == "health.health_check":
             return None
         if not configured():
             return error("Demo authentication is unavailable.", 503, "auth_unavailable")

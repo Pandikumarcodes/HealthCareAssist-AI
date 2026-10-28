@@ -2,12 +2,23 @@
 __pycache__/
 *.pyc
 .venv/
+.venv.*/
 .pytest_cache/
 backend/instance/
+instance/demo-auth.json
+*.pdf
+*.pem
+*.key
+credentials.json
+.aws/
+*.p12
+*.pfx
 
 # Environment
 .env
 .env.*
+*.env.backup
+*.env.bak
 !.env.example
 
 # Node
